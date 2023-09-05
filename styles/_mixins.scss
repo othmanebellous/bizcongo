@@ -1,0 +1,35 @@
+@mixin bkg-img-transition( $bkg1, $bkg2, $transTime:0.3s){  
+    position: relative;  
+    z-index: 100; 
+    &:before, &:after {
+      background-size: cover;  
+      content: '';    
+      display: block;
+      height: inherit;
+      position: absolute;
+      top: 50%; left: 50%;    
+      width: inherit;    
+      transition: opacity $transTime;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      transform: translate(-50%, -50%);
+    }
+    &:before {    
+      z-index: -101;
+      background-image: url("#{$bkg1}");    
+    }
+    &:after {    
+      z-index: -100;
+      opacity: 0;
+      background-image: url("#{$bkg2}");    
+    }
+    &:hover {
+      &:after{
+        opacity: 0; 
+      }
+       &:after{
+         opacity: 1; 
+       }
+    }  
+  }

@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
                 
@@ -98,6 +99,7 @@ header{
 
 .links-list{
     max-height: 0;
+    width: 100%;
     position: absolute;
     top: 138%;
     left: 0;
@@ -157,20 +159,19 @@ header{
     }
 
     &:checked + .languages-label::before{
-        content: url(../images/colored-languages.png);
+        opacity: 0;
+    }
+
+    &:checked + .languages-label::after{
+        opacity: 1;
     }
 }
 
 .languages-label{
     cursor: pointer;
-    &::before{
-        content: url(../images/languages.png);
-        transition: 0.3s ease-in-out;
-    }
-
-    &:hover::before{
-        content: url(../images/colored-languages.png);
-    }
+    width: 27px;
+    height: 27px;
+    @include bkg-img-transition("../images/languages.png","../images/colored-languages.png");
 }
 
 .options-wrapper{
@@ -179,40 +180,28 @@ header{
 
 
 .cart-link{
-    position: relative;
-    &::before{
-        content: url(../images/cart.png);
-    }
+    width: 32px;
+    height: 32px;
+    @include bkg-img-transition("../images/cart.png","../images/colored-cart.png");
+}
 
-    &:hover::before{
-        content: url(../images/colored-cart.png);
-    }
-
-    &::after{
-        content: attr(data-cart-items);
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 13px;
-        height: 13px;
-        background-color: #e40000;
-        border-radius: 50%;
-        right: -6px;
-        top: -3px;
-        color: #FFF;
-        font-size: 10px;
-        font-weight: bold;
-    }
+.cart-items{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #e40000;
+    border-radius: 50%;
+    right: -6px;
+    top: -3px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 .profile-link{
-    &::before{
-        content: url(../images/user.png);
-    }
-
-    &:hover::before{
-        content: url(../images/colored-user.png);
-    }
+   width: 21px;
+   height: 30px;
+   @include bkg-img-transition("../images/user.png","../images/colored-user.png");
 }
 
 .links-list{
@@ -429,9 +418,7 @@ header{
 
 .location-btn{
     width: 60px;
-    &::before{
-        content: url(../images/localisation.png);
-    }
+    @include bkg-img-transition("../images/localisation.png","../images/white-location.png");
 }
 
 .submit-btn{
@@ -520,18 +507,13 @@ header{
         transform: translateY(-78px);
     }
 
-    .location-btn:hover{
-        background-color: transparent;
-        &::before{
-            content: (url(../images/white-location.png));
-        }
-    }
-
     .submit-btn:hover{
         color: $mainColor;
     }
 
-
+    .location-btn:hover {
+        background-color: transparent;
+    }
 }
 
 @media (max-width:1030px) {
@@ -721,7 +703,7 @@ header{
         height: 93px;
         background-color: $mainColor;
         &::before{
-            content: url(../images/white-location.png);
+            background-image: url(../images/white-location.png);
         }
     }
 }
