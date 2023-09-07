@@ -1,0 +1,33 @@
+mixin spotlightcard
+    .main-cards-wrapper.flex-space-between
+        each card, index in spotlightCards
+            if index < 2
+                article.main-card.flex-align-center 
+                    .main-card-img-holder 
+                        img.main-card-img(src=card.image, alt="")
+                    .main-card-infos
+                        h3.main-card-heading #{card.title}
+                        .main-card-paragraph-wrapper
+                            p.main-card-description.desc #{card.description}
+                        .main-card-details 
+                            time.main-card-date.main-card-detail #{card.date}
+                            span.main-card-comments.main-card-detail #{card.commentsNumber}
+                            span.main-card-shares.main-card-detail #{card.sharesNumber}
+                    button.main-card-btn.show-more-btn
+                    a.spotmightCard-link(href= card.link)  
+    .normal-cards-wrapper.flex-space-between
+        each card, index in spotlightCards
+            if index > 1
+                article.card.flex-align-center
+                    .card-img-holder 
+                        img.card-img(src=card.image, alt="")
+                    .card-infos
+                        h3.card-heading #{card.title}
+                        .card-paragraph-wrapper
+                            p.card-description.desc #{card.description}
+                        .card-details 
+                            time.card-date.card-detail #{card.date}
+                            span.card-comments.card-detail #{card.commentsNumber}
+                            span.card-shares.card-detail #{card.sharesNumber}
+                    button.card-btn.show-more-btn
+                    a.spotmightCard-link(href= card.link) 
