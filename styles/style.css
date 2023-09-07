@@ -553,6 +553,10 @@ header {
   width: 100%;
 }
 
+.spotlight-cards-wrapper {
+  margin-bottom: 66px;
+}
+
 .section-paragraph {
   font-size: 18px;
   line-height: 30px;
@@ -741,7 +745,6 @@ header {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
   z-index: 1;
 }
 .main-card-btn::before, .card-btn::before {
@@ -750,6 +753,27 @@ header {
   font-weight: 900;
   color: #FFF;
   font-size: 21px;
+  display: block;
+  transition: 0.4s ease-in-out;
+}
+.main-card-btn::after, .card-btn::after {
+  content: attr(data-content);
+  visibility: hidden;
+  position: absolute;
+  width: 94px;
+  background-color: #555;
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-card-btn:hover::after, .card-btn:hover::after {
+  visibility: visible;
+  opacity: 1;
 }
 
 .main-card-btn {
@@ -770,8 +794,24 @@ header {
   left: 0;
 }
 
-.rotate {
+.rotate::before {
   transform: rotate(45deg);
+}
+
+.show-all-btn {
+  margin: 0 auto;
+  width: 251px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #f0b300;
+  font-size: 16px;
+  color: #FFF;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+.show-all-btn:hover {
+  color: #f0b300;
+  background: beige;
 }
 
 @media (max-width: 1650px) {
@@ -1065,7 +1105,7 @@ header {
     margin-top: 77px;
   }
   .section-paragraph {
-    margin: 35px auto 86px;
+    margin: 35px auto 46px;
   }
 }
 @media (max-width: 710px) {

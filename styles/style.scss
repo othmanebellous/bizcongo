@@ -435,6 +435,10 @@ header{
     width: 100%;
 }
 
+.spotlight-cards-wrapper {
+    margin-bottom: 66px;
+  }
+
 .section-paragraph {
     font-size: 18px;
     line-height: 30px;
@@ -624,14 +628,36 @@ header{
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.4s ease-in-out;
     z-index: 1;
     &::before{
         content: "\2b";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         color: #FFF;
-        font-size: 21px
+        font-size: 21px;
+        display: block;
+        transition: 0.4s ease-in-out;
+    }
+
+    &::after{
+        content: attr(data-content);
+        visibility: hidden;
+        position: absolute;
+        width: 94px;
+        background-color: #555;
+        color: #fff;
+        padding: 5px 0;
+        border-radius: 6px;
+        opacity: 0;
+        transition: opacity .6s ease-in-out;
+        top: -34px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:hover::after{
+        visibility: visible;
+        opacity: 1;
     }
   }
 
@@ -653,8 +679,24 @@ header{
     left: 0;
   }
 
-  .rotate{
+  .rotate::before{
     transform: rotate(45deg);
+  }
+
+  .show-all-btn{
+    margin: 0 auto;
+    width: 251px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: $mainColor;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        color: #f0b300;
+        background: beige;
+      }
   }
 
 @media (max-width: 1650px){
@@ -1008,7 +1050,7 @@ header{
       }
 
       .section-paragraph {
-        margin: 35px auto 86px;
+        margin: 35px auto 46px;
       }
 }
 

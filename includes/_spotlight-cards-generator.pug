@@ -13,7 +13,7 @@ mixin spotlightcard
                             time.main-card-date.main-card-detail #{card.date}
                             span.main-card-comments.main-card-detail #{card.commentsNumber}
                             span.main-card-shares.main-card-detail #{card.sharesNumber}
-                    button.main-card-btn.show-more-btn
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus")
                     a.spotmightCard-link(href= card.link)  
     .normal-cards-wrapper.flex-space-between
         each card, index in spotlightCards
@@ -29,5 +29,5 @@ mixin spotlightcard
                             time.card-date.card-detail #{card.date}
                             span.card-comments.card-detail #{card.commentsNumber}
                             span.card-shares.card-detail #{card.sharesNumber}
-                    button.card-btn.show-more-btn
+                    button.card-btn.show-more-btn(data-content="Afficher plus")
                     a.spotmightCard-link(href= card.link) 

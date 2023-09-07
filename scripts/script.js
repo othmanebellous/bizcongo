@@ -14,6 +14,7 @@ function rotateButton(btn){
 function showAndHideDescription(btn){
     const paragraph = btn.parentElement.querySelector(".desc");
     if (!paragraph.classList.contains("expand")) {
+        btn.setAttribute("data-content", "Afficher moins");
         paragraph.style.display = "block";
         paragraph.parentElement.style.height= `${paragraph.offsetHeight}px`;
         paragraph.classList.add("expand");
@@ -27,5 +28,6 @@ function showAndHideDescription(btn){
         setTimeout(function() {
             paragraph.style.display = "-webkit-box";
           }, 400);
+        btn.setAttribute("data-content", "Afficher plus");
     }
 }
