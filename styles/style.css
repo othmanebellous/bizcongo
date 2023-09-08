@@ -1179,6 +1179,7 @@ header {
     padding: 0;
     width: 100%;
     gap: 12px;
+    box-shadow: none;
   }
   .keywords-input {
     order: 2;
@@ -1281,6 +1282,9 @@ header {
   .card-paragraph-wrapper {
     margin: 25px 0;
   }
+  .main-card-btn::after, .card-btn::after {
+    display: none;
+  }
   .section-heading, .section-paragraph {
     max-width: 569px;
   }
@@ -1289,6 +1293,9 @@ header {
   }
   .glide__arrows {
     padding: 0;
+  }
+  .glide__arrow:hover {
+    background-color: #FFF;
   }
   .business-news::before {
     height: 1009px;
