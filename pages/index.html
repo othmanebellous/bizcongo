@@ -80,17 +80,17 @@
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <li class="glide__slide"><img class="hero-img" src="../images/hero.png" alt="">
+              <li class="glide__slide hero-slide-item"><img class="hero-img" src="../images/hero.png" alt="">
                 <div class="hero-content">
                   <h1 class="hero-heading">bizcongo</h1>
                   <p class="hero-paragraph">bien plus qu'un répertoire</p>
                 </div>
               </li>
-              <li class="glide__slide"><img class="hero-img" src="../images/hero.png" alt=""></li>
-              <li class="glide__slide"><img class="hero-img" src="../images/hero.png" alt=""></li>
+              <li class="glide__slide hero-slide-item"><img class="hero-img" src="../images/hero.png" alt=""></li>
+              <li class="glide__slide hero-slide-item"><img class="hero-img" src="../images/hero.png" alt=""></li>
             </ul>
           </div>
-          <div class="glide__arrows" data-glide-el="controls">
+          <div class="glide__arrows hero-glide-arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left flex-center" data-glide-dir="&lt;"></button>
             <button class="glide__arrow glide__arrow--right flex-center" data-glide-dir="&gt;"></button>
           </div>
@@ -191,7 +191,74 @@
           </div>
         </div><a class="show-all-btn flex-center" href="#">Voir toutes les actualites</a>
       </section>
+      <section class="business-news">
+        <h2 class="section-heading business-news-heading flex-center">L'actualité des entreprises</h2>
+        <p class="section-paragraph business-news-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua incididunt ut labore et dolore magna aliqua</p>
+        <div class="business-cards-wrapper container">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide business-news-slide flex-center">
+                  <article class="business-news-card"> <img class="business-news-card-img" src="../images/business-img-1.png"/>
+                    <div class="business-news-card-date">
+                      <time class="business-news-card-day">4</time>
+                      <time class="business-news-card-month">oct</time>
+                    </div>
+                    <p class="news-type flex-center">Annonces</p>
+                    <h3 class="business-news-card-heading">CIMKO</h3><a class="business-news-card-link" href="#"></a>
+                  </article>
+                </li>
+                <li class="glide__slide business-news-slide flex-center">
+                  <article class="business-news-card"> <img class="business-news-card-img" src="../images/business-img-2.png"/>
+                    <div class="business-news-card-date">
+                      <time class="business-news-card-day">4</time>
+                      <time class="business-news-card-month">oct</time>
+                    </div>
+                    <p class="news-type flex-center">Promotions</p>
+                    <h3 class="business-news-card-heading">SOKIN</h3><a class="business-news-card-link" href="#"></a>
+                  </article>
+                </li>
+                <li class="glide__slide business-news-slide flex-center">
+                  <article class="business-news-card"> <img class="business-news-card-img" src="../images/business-img-3.png"/>
+                    <div class="business-news-card-date">
+                      <time class="business-news-card-day">4</time>
+                      <time class="business-news-card-month">oct</time>
+                    </div>
+                    <p class="news-type flex-center">Annonces</p>
+                    <h3 class="business-news-card-heading">DAON</h3><a class="business-news-card-link" href="#"></a>
+                  </article>
+                </li>
+                <li class="glide__slide business-news-slide flex-center">
+                  <article class="business-news-card"> <img class="business-news-card-img" src="../images/business-img-4.png"/>
+                    <div class="business-news-card-date">
+                      <time class="business-news-card-day">4</time>
+                      <time class="business-news-card-month">oct</time>
+                    </div>
+                    <p class="news-type flex-center">Promotions</p>
+                    <h3 class="business-news-card-heading">O POETA</h3><a class="business-news-card-link" href="#"></a>
+                  </article>
+                </li>
+                <li class="glide__slide business-news-slide flex-center">
+                  <article class="business-news-card"> <img class="business-news-card-img" src="../images/business-img-3.png"/>
+                    <div class="business-news-card-date">
+                      <time class="business-news-card-day">4</time>
+                      <time class="business-news-card-month">oct</time>
+                    </div>
+                    <p class="news-type flex-center">Annonces</p>
+                    <h3 class="business-news-card-heading">DAON</h3><a class="business-news-card-link" href="#"></a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left flex-center" data-glide-dir="&lt;"></button>
+              <button class="glide__arrow glide__arrow--right flex-center" data-glide-dir="&gt;"></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"> </script><script> new Glide('.glide').mount() </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"> </script>
+    <script>new Glide('.hero .glide').mount(); new Glide('.business-cards-wrapper .glide', {type: 'carousel',startAt: 0,perView: 4, gap:20, breakpoints: { 1730: { perView: 3}, 1030: { perView: 2, }, 640: { perView: 1, }}}).mount();</script>
   </body>
 </html>

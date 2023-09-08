@@ -1,0 +1,11 @@
+mixin businessNewsCard
+    each card in businessNewsCards
+        li.glide__slide.business-news-slide.flex-center
+            article.business-news-card 
+                img.business-news-card-img(src=card.image)
+                .business-news-card-date
+                    time.business-news-card-day #{card.day}
+                    time.business-news-card-month #{card.month}
+                p.news-type.flex-center #{card.type}
+                h3.business-news-card-heading #{card.company}
+                a.business-news-card-link(href=card.link)

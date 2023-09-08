@@ -212,7 +212,7 @@ header{
     position: relative;
 }
 
-.glide__slide{
+.hero-slide-item{
     position: relative;
 
     &::before, &::after{
@@ -247,10 +247,13 @@ header{
     width: 100%;
     max-width: 1620px;
     margin: 0 auto;
+    pointer-events: none;
 }
 
 .glide__arrow{
     transition: 0.3s ease-in-out;
+    pointer-events: auto;
+    box-shadow: 0px 5px 3px rgba(0,0,0,0.11);
     &:hover{
         background-color: $mainColor;
     }
@@ -454,6 +457,7 @@ header{
     text-transform: uppercase;
     font-family: "open sans";
     gap: 64px;
+    text-align: center;
     &::before, &::after{
         content: "";
         height: 1px;
@@ -697,6 +701,119 @@ header{
         color: #f0b300;
         background: beige;
       }
+  }
+
+  .business-news {
+    position: relative;
+    margin-top: 172px;
+    padding-top: 72px;
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 450px;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(124deg, #22252a 0%, #8a94a0 100%);
+        z-index: -1;
+    }
+  }
+
+  .business-news-heading{
+    color: #FFF;
+    &::before, &::after{
+        width: 265px;
+    }
+
+    &::before{
+        background-image: linear-gradient(to right, transparent, white);
+    }
+
+    &::after{
+        background-image: linear-gradient(to left, transparent, white);
+    }
+  }
+
+  .business-news-paragraph{
+    color: #FFF;
+    max-width: 954px;
+    margin: 46px auto 57px;
+  }
+
+  .business-cards-wrapper.container {
+    max-width: 1778px;
+  }
+  
+  .business-news-card{
+    position: relative;
+    width: 421px;
+    height: 323px;
+    color: #FFF;
+    padding: 23px 29px;
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.67;
+        width: 100%;
+        height: 182px;
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0));
+        z-index: -1;
+    }
+  }
+
+  .business-news-card-img{
+    position: absolute;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .business-news-card-date {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .business-news-card-day{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .business-news-card-month{
+    font-size: 10px;
+  }
+
+  .news-type{
+    width: 101px;
+    height: 27px;
+    border-radius: 5px;
+    background-color: $mainColor;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 185px 0 10px 0;
+  }
+
+  .business-news-card-heading{
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .business-news-card-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
   }
 
 @media (max-width: 1650px){
@@ -945,7 +1062,7 @@ header{
         cursor: auto;
     }
 
-    .glide__arrow, .social-links{
+    .hero-glide-arrows, .social-links{
         display: none;
     }
 
@@ -1052,6 +1169,34 @@ header{
       .section-paragraph {
         margin: 35px auto 46px;
       }
+
+      .business-news-card{
+        width: 571px;
+        height: 438px;
+        &::after{
+            height: 247px;
+        }
+      }
+
+      .business-news-card-day {
+        font-size: 27px;
+      }
+
+      .business-news-card-month {
+        font-size: 13px;
+      }
+
+      .news-type{
+        width: 137px;
+        height: 37px;
+        font-size: 19px;
+        margin: 250px 0 10px 0;
+      }
+
+      .business-news-card-heading{
+        font-size: 38px;
+        letter-spacing: 3px;
+      }
 }
 
 @media (max-width:710px) {
@@ -1070,6 +1215,21 @@ header{
     .card-paragraph-wrapper{
         margin: 25px 0;
   }
+
+  .section-heading, .section-paragraph{
+    max-width: 569px;
+  }
+  .section-heading{
+    margin: 0 auto;
+  }
+
+  .glide__arrows {
+    padding: 0;
+  }
+
+  .business-news::before {
+        height: 1009px;
+    }
 }
 
 @media (max-width:600px) {
