@@ -1279,6 +1279,9 @@ header {
   .section-paragraph {
     margin: 35px auto 46px;
   }
+  .business-news {
+    margin-top: 77px;
+  }
   .business-news-card {
     width: 571px;
     height: 438px;
