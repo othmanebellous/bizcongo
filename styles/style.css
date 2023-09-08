@@ -98,7 +98,11 @@ header {
   left: 0;
   overflow: hidden;
   transition: 0.3s ease-in-out;
-  padding-left: 7px;
+  background-color: rgba(253, 198, 0, 0.4);
+}
+
+.links-list-item:not(:last-of-type) {
+  border-bottom: 1px solid #333;
 }
 
 .nav-list-item {
@@ -126,7 +130,10 @@ header {
 }
 
 .list-link {
+  display: block;
+  padding: 6px;
   color: #FFF;
+  transition: 0.3s ease-in-out;
 }
 .list-link:hover {
   color: #f0b300;
@@ -137,19 +144,44 @@ header {
 }
 
 .languages-list {
-  display: none;
+  max-height: 0;
+  width: -moz-fit-content;
+  width: fit-content;
   position: absolute;
-  top: 37px;
-  left: -76px;
-  border: none;
-  padding: 14px;
+  top: 138%;
+  left: -22px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(253, 198, 0, 0.4);
+}
+
+.language-radio {
+  display: none;
+}
+.language-radio:checked + .language-label {
+  color: #f0b300;
+}
+
+.language-label {
+  display: block;
+  font-size: 17px;
+  padding: 6px;
+  color: #FFF;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.language-label:not(:last-of-type) {
+  border-bottom: 1px solid #333;
+}
+.language-label:hover {
+  color: #f0b300;
 }
 
 .language_input {
   display: none;
 }
 .language_input:checked + .languages-label + .languages-list {
-  display: block;
+  max-height: 300px;
 }
 .language_input:checked + .languages-label::before {
   opacity: 0;
@@ -1056,7 +1088,7 @@ header {
 }
 @media (min-width: 1031px) {
   .nav-list-item:hover .links-list {
-    max-height: 60px;
+    max-height: 300px;
   }
   .nav-list-item:hover .nav-checkbox-label::after {
     transform: translateY(-2px) rotate(-180deg);
@@ -1105,8 +1137,14 @@ header {
   .links-list {
     position: static;
   }
+  .links-list {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 10px;
+  }
   .nav-checkbox:checked ~ .links-list {
-    max-height: 60px;
+    max-height: 300px;
+    background-color: rgba(253, 198, 0, 0.4);
   }
   .nav-checkbox:checked + .nav-checkbox-label::after {
     transform: translateY(-2px) rotate(-180deg);
@@ -1117,9 +1155,6 @@ header {
   }
   .nav-list-item {
     margin-bottom: 16px;
-  }
-  .links-list {
-    padding: 7px 0 0 7px;
   }
   .logo {
     flex: 1;
@@ -1342,9 +1377,6 @@ header {
   }
   .logo img {
     width: 128px;
-  }
-  .languages-list {
-    padding: 9px;
   }
   .search-input, .search-select {
     font-size: 20px;

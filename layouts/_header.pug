@@ -11,59 +11,75 @@ header.flex-space-between.container
                 label.nav-checkbox-label(for="checkbox-1") A la une
                 ul.links-list
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Spotlight
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
-                    li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Agenda culturel
             li.nav-list-item
                 input.nav-checkbox(type="checkbox", id="checkbox-2")
                 label.nav-checkbox-label(for="checkbox-2") Travailler en rdc
                 ul.links-list
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Offres d'emploi
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Demandeur d'emploi
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Déposer un CV 
+                    li.links-list-item
+                        a(class="list-link" href="#") Législation
+                    li.links-list-item
+                        a(class="list-link" href="#") Les communiqués
             li.nav-list-item
                 input.nav-checkbox(type="checkbox", id="checkbox-3")
                 label.nav-checkbox-label(for="checkbox-3") Appels d'offres
                 ul.links-list
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Tous les appels d'offres 
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Marché de Fournitures 
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Marché de Travaux 
+                    li.links-list-item
+                        a(class="list-link" href="#") Marché de Services 
+                    li.links-list-item
+                        a(class="list-link" href="#") Ventes aux enchères 
+                    li.links-list-item
+                        a(class="list-link" href="#") Attribution de marchés 
             li.nav-list-item
                 input.nav-checkbox(type="checkbox", id="checkbox-4")
                 label.nav-checkbox-label(for="checkbox-4") Bons plans
                 ul.links-list
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Annonces Entreprises 
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Promotions Entreprises  
                     li.links-list-item
-                        a(class="list-link" href="#") Test
+                        a(class="list-link" href="#") Petites Annonces
             li.nav-list-item
                 input.nav-checkbox(type="checkbox", id="checkbox-5")
                 label.nav-checkbox-label(for="checkbox-5") Infos pratiques
                 ul.links-list
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Numéros d'Urgences 
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Demander un crédit 
                     li.links-list-item
-                        a(class="list-link" href="#") Test 
+                        a(class="list-link" href="#") Demander une assurance
+                    li.links-list-item
+                        a(class="list-link" href="#") Horaires des vols
+                    li.links-list-item
+                        a(class="list-link" href="#") A la Télé
+                    li.links-list-item
+                        a(class="list-link" href="#") Météo
     .options-wrapper.flex-align-center
         input(class="language_input" type="checkbox", name="" id="language")
         label.languages-label.flex-center(for="language")
-        select.languages-list
-            option(value="") Sélectionner une langue 
-            option(value="fr") Francais
-            option(value="an") Anglais
-            option(value="ar") Arabe
+        .languages-list
+            input.language-radio(type="radio", id="french", name="language", checked)
+            label.language-label(for="french") Français
+            input.language-radio(type="radio", id="english", name="language")
+            label.language-label(for="english") English
+            input.language-radio(type="radio", id="spanish", name="language")
+            label.language-label(for="spanish") Español
         a.cart-link(href="#")
             span.cart-items.flex-center 3
         a.profile-link.flex-align-center(href="#")
