@@ -131,7 +131,7 @@ header {
 
 .list-link {
   display: block;
-  padding: 6px;
+  padding: 9px 6px;
   color: #FFF;
   transition: 0.3s ease-in-out;
 }
@@ -1151,7 +1151,7 @@ header {
   }
   .nav-list {
     display: block;
-    font-size: 16px;
+    font-size: 18px;
   }
   .nav-list-item {
     margin-bottom: 16px;
@@ -1353,7 +1353,7 @@ header {
 }
 @media (max-width: 480px) {
   .nav-list {
-    font-size: 14px;
+    font-size: 16px;
   }
   .hero-content {
     max-width: 332px;
