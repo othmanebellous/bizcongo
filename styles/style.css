@@ -1179,6 +1179,9 @@ header {
     line-height: 50px;
     word-spacing: 7px;
   }
+  .hero-glide {
+    pointer-events: none;
+  }
   .glide--swipeable {
     cursor: auto;
   }
