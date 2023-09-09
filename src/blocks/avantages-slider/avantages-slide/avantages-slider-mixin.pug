@@ -1,0 +1,22 @@
+mixin avantagesSlide(avantagesSliderList)
+    each slide in avantagesSliderList
+        .avantages-slide(class=slide.sliderColor)
+            .container
+                h2 Vos avantages 
+                    span.block-in-phone Hello bank!#{slide.isPro}
+                .cards-wrapper
+                    img(src=slide.stImage alt="")
+                    if slide.ndImage
+                        img(src=slide.ndImage alt="")
+                .duration.relative
+                    strong.number.block #{slide.duration}
+                    p
+                        strong.block-in-phone #{slide.durationStrong} 
+                        strong.block-in-phone #{slide.durationNdStrong} 
+                        | #{slide.durationContent}
+                .payments
+                    strong.number.block.currency.relative(currency-data=slide.paymentsCurrency) #{slide.payments}
+                    p
+                        strong.block-in-phone #{slide.paymentsStrong} 
+                        | #{slide.paymentsContent} 
+                        span.block #{slide.paymentsNdContent}

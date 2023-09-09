@@ -1,0 +1,9 @@
+include ./souscrivez-cards/souscrivez-card-mixin
+include ./souscrivez-cards/souscrivez-cards-list
+
+section.souscrivez
+    .container
+        h2 Souscrivez 
+            span.block-in-phone en toute simplicité
+        .souscrivez-cards
+            +souscrivezCard(souscrivezCardsList)

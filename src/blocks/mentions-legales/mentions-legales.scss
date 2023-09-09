@@ -1,0 +1,32 @@
+.mentions__legales {
+  padding-bottom: toMaxBigVW(336);
+  font-size: toMaxBigVW(20);
+  line-height: toMaxBigVW(25);
+  color: #000;
+  @include phones {
+    padding-bottom: toMaxSmallVW(352);
+    font-size: toMaxSmallVW(14);
+    line-height: toMaxSmallVW(17);
+  }
+
+  ol {
+    counter-reset: list;
+  }
+
+  li,
+  p {
+    padding-bottom: toMaxBigVW(24);
+    @include phones {
+      padding-bottom: toMaxSmallVW(20);
+    }
+  }
+
+  li:before {
+    content: '(' counter(list) ')';
+    counter-increment: list;
+    margin-right: toMaxBigVW(6);
+    @include phones {
+      margin-right: toMaxSmallVW(4);
+    }
+  }
+}

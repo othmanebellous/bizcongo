@@ -1,0 +1,10 @@
+mixin souscrivezCard(tripStepsList)
+    each card in tripStepsList
+        article.souscrivez-card.relative(class=card.order)
+            .number-and-icon.relative(data-list=card.number)
+                img.souscrivez-card-icon.block(src="./images/souscrivez-" + card.number + ".png", alt=card.title)
+            .card-content
+                h3.souscrivez-card-title #{card.title}
+                    br
+                    | #{card.title2}
+                p.souscrivez-card-content #{card.content}

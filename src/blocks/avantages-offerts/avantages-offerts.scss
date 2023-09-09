@@ -1,0 +1,151 @@
+.avantages__offerts {
+  padding: toMaxBigVW(104) 0 toMaxBigVW(163);
+  text-align: center;
+  @include phones {
+    padding: toMaxSmallVW(48) 0 toMaxSmallVW(61);
+  }
+  h2 {
+    color: $pink-text;
+  }
+  .price {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: toMaxBigVW(80) 0;
+    @include phones {
+      padding: toMaxSmallVW(48) 0 toMaxSmallVW(12);
+    }
+    strong {
+      font-size: toMaxBigVW(154);
+      line-height: toMaxBigVW(61);
+      padding-top: toMaxSmallVW(4);
+      color: $blue-text;
+      @include phones {
+        font-size: toMaxSmallVW(100);
+        line-height: toMaxSmallVW(30);
+        padding-top: toMaxSmallVW(10);
+      }
+    }
+    sup {
+      font-size: toMaxBigVW(128);
+      @include phones {
+        font-size: toMaxSmallVW(72);
+      }
+    }
+    &.plus {
+      margin-top: toMaxBigVW(56);
+
+      @media only screen and (max-width: 1600px) {
+        margin-top: toMaxBigVW(80);
+      }
+      @media only screen and (max-width: 1366px) {
+        margin-top: toMaxBigVW(96);
+      }
+      @include phones {
+        margin-top: toMaxSmallVW(40);
+      }
+      &::before {
+        color: $blue-text;
+        font-size: toMaxBigVW(128);
+        font-weight: bold;
+        content: 'ou';
+        position: absolute;
+        top: toMaxBigVW(-56);
+        left: 50%;
+        transform: translateX(-85%);
+        @media only screen and (max-width: 1366px) {
+          top: toMaxBigVW(-52);
+        }
+        @media only screen and (max-width: 1152px) {
+          top: toMaxBigVW(-40);
+        }
+        @media only screen and (max-width: 960px) {
+          top: toMaxBigVW(-32);
+        }
+        @media only screen and (max-width: 768px) {
+          top: toMaxBigVW(-24);
+        }
+        @include phones {
+          font-size: toMaxSmallVW(80);
+          top: toMaxSmallVW(-48);
+
+          transform: translateX(-75%);
+          @media only screen and (max-width: 560px) {
+            top: toMaxSmallVW(-42);
+          }
+          @media only screen and (max-width: 480px) {
+            top: toMaxSmallVW(-36);
+          }
+          @media only screen and (max-width: 400px) {
+            top: toMaxSmallVW(-30);
+          }
+        }
+      }
+    }
+  }
+  .price__sup sup {
+    font-size: toMaxBigVW(34);
+    line-height: toMaxBigVW(51);
+    @include phones {
+      font-size: toMaxSmallVW(20);
+      line-height: toMaxSmallVW(30);
+    }
+  }
+  &__gift {
+    border: 2px solid #5db7d1;
+    border-radius: toMaxBigVW(26);
+    margin: toMaxBigVW(186) 0 toMaxBigVW(115);
+    padding: toMaxBigVW(132) toMaxBigVW(66) toMaxBigVW(100);
+    @include phones {
+      border-radius: toMaxSmallVW(26);
+      margin: toMaxSmallVW(107) 0 toMaxSmallVW(66);
+      padding: toMaxSmallVW(88) toMaxSmallVW(36) toMaxSmallVW(52);
+    }
+    .top-margin {
+      margin-top: toMaxBigVW(64);
+      @include phones {
+        margin-top: toMaxSmallVW(36);
+      }
+    }
+    .gift__sup sup {
+      font-size: toMaxBigVW(24);
+      font-weight: bold;
+      margin-left: -5px;
+      @include phones {
+        font-size: toMaxSmallVW(14);
+        margin-left: -2px;
+        // font-size: toMaxSmallVW(140);
+      }
+    }
+  }
+  &__gift::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/gift.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: toMaxBigVW(203);
+    height: toMaxBigVW(201);
+    left: 50%;
+    top: toMaxBigVW(-6);
+    transform: translate(-50%, -50%);
+    @include phones {
+      width: toMaxSmallVW(147);
+      height: toMaxSmallVW(145);
+    }
+  }
+  p {
+    font-size: toMaxBigVW(40);
+    line-height: toMaxBigVW(60);
+
+    @include phones {
+      font-size: toMaxSmallVW(25);
+      line-height: toMaxSmallVW(30);
+      padding: 0 toMaxSmallVW(12);
+    }
+  }
+  .break-line {
+    @include phones {
+      white-space: pre;
+    }
+  }
+}

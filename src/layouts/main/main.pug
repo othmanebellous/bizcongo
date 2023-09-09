@@ -1,0 +1,62 @@
+main    
+    section.hero 
+        .glide.hero-glide
+            .glide__track(data-glide-el="track")
+                ul.glide__slides
+                    li.glide__slide.hero-slide-item
+                        img.hero-img(src="../images/hero.png", alt="")
+                        .hero-content
+                            h1.hero-heading bizcongo
+                            p.hero-paragraph bien plus qu'un répertoire
+                    li.glide__slide.hero-slide-item
+                        img.hero-img(src="../images/hero.png", alt="")
+                    li.glide__slide.hero-slide-item
+                        img.hero-img(src="../images/hero.png", alt="")
+            .glide__arrows.hero-glide-arrows(data-glide-el="controls")
+                button.glide__arrow.glide__arrow--left.flex-center(data-glide-dir="<")
+                button.glide__arrow.glide__arrow--right.flex-center(data-glide-dir=">")
+        .social-links 
+            a.social-link.facebook-link(href="#")
+            a.social-link.twitter-link(href="#")
+            a.social-link.linkedin-link(href="#")
+        a.hero-btn.flex-center(href="#")
+        .search-wrapper.container
+            form.search-form.flex-space-between(action="", method="post") 
+                input.search-input.keywords-input(type="text" placeholder="Mots cles")
+                .localization-input-wrapper
+                    input.search-input.localization-input(type="text" placeholder="Localiser votre recherche")
+                .select-wrapper 
+                    select.search-select
+                     option.select-option(value="") Secteur d'activité
+                     option.select-option(value="") Test
+                     option.select-option(value="") Test
+                     option.select-option(value="") Test
+                button.location-btn(type="button")
+                button.submit-btn(type="submit") Chercher
+    section.sponsors.container  
+        img.sponsors-img(src="../images/sponsors.png", alt="")
+    section.spotlight.container
+        h2.section-heading.flex-center Spotlight
+        p.section-paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaincididunt ut labore et dolore magna aliqua
+        .spotlight-cards-wrapper 
+            +spotlightcard
+        a.show-all-btn.flex-center(href="#") Voir toutes les actualites
+    section.business-news
+        h2.section-heading.business-news-heading.flex-center L'actualité des entreprises
+        p.section-paragraph.business-news-paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua incididunt ut labore et dolore magna aliqua
+        .business-cards-wrapper.container
+            .glide
+                .glide__track(data-glide-el="track")
+                    ul.glide__slides
+                        +businessNewsCard
+                .glide__arrows(data-glide-el="controls")
+                    button.glide__arrow.glide__arrow--left.flex-center(data-glide-dir="<")
+                    button.glide__arrow.glide__arrow--right.flex-center(data-glide-dir=">")
+                .glide__bullets.business-news-bullets(data-glide-el="controls[nav]")
+                    +businessNewsBullet
+        .business-news-links.flex-center
+            a.show-all-btn.business-news-link.flex-center(href="#") Voir toutes les actualites
+            a.show-all-btn.business-news-link.flex-center(href="#") Voir toutes les promotions
+    section.activities  
+        h2.section-heading.flex-center Secteur d'activite
+        p.section-paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua incididunt ut labore et dolore magna aliqua

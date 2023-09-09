@@ -1,0 +1,19 @@
+@function valueInPx($value) {
+  @return $value + px;
+}
+
+@function toBigVW($value) {
+  @return calc(($value * 100) / 2475) + vw;
+}
+
+@function toSmallVW($value) {
+  @return  calc(($value * 100) / 640) + vw;
+}
+
+@function toMaxBigVW($value) {
+  @return min(valueInPx($value), toBigVW($value));
+}
+
+@function toMaxSmallVW($value) {
+  @return min(valueInPx($value), toSmallVW($value));
+}

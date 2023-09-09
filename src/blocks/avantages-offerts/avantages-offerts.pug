@@ -1,0 +1,34 @@
+include ../../components/scroll-to-mentions-legales/scroll-to-mentions-legales
+
+section.avantages__offerts
+    .container
+        h2 Jusqu’à 180€ d’avantages offerts : 
+        .price
+            strong 80
+                sup.currency €
+            +scrollToMentionsLegales("1", "price__sup")
+        p offerts dès l’ouverture définitive de votre compte de dépôt assorti d’une offre groupée
+        .price.plus.relative
+            strong 100
+                sup.currency €
+            +scrollToMentionsLegales("2", "price__sup")
+        p offerts en bons d’achat pour toute mobilité bancaire avec Hello Start +. 
+
+        .avantages__offerts__gift.relative
+            p En cas de souscription à l’offre 
+                strong Hello Prime ou Hello Prime Duo,
+            p profitez de l’offre à 
+                strong 1€/mois pendant les 6 premiers mois
+                +scrollToMentionsLegales("1", "gift__sup")
+                |.
+            p.top-margin Et pour 
+                strong Hello Business,
+            p profitez également de l’offre à 
+                strong 1€/mois pendant les 3 premiers mois
+                +scrollToMentionsLegales("1", "gift__sup")
+                |.
+
+        p Pour en profiter, vous devez initier votre demande d’ouverture de compte
+        p 
+            strong au plus tard le 14/09/2023 à 15h
+        p puis finaliser l’ouverture définitive de votre compte avant le 14/10/2023.

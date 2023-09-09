@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "hello_type";
+  src: url("../fonts/hello_type_regular-webfont.woff2") format("woff2"),
+    url("../fonts/hello_type_regular-webfont.woff") format("woff"),
+    url("../fonts/hello_type_regular-webfont.ttf") format("ttf"),
+    url("../fonts/hello_type_regular-webfont.eot") format("eot");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "hello_type";
+  src: url("../fonts/hello_type_bold-webfont.woff2") format("woff2"),
+    url("../fonts/hello_type_bold-webfont.woff") format("woff"),
+    url("../fonts/hello_type_bold-webfont.ttf") format("ttf"),
+    url("../fonts/hello_type_bold-webfont.eot") format("eot");
+  font-weight: bold;
+}
