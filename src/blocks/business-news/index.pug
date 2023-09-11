@@ -1,0 +1,19 @@
+include ./card
+include ./bullets
+
+section.business-news
+    h2.section-heading.business-news-heading.flex-center L'actualité des entreprises
+    p.section-paragraph.business-news-paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua incididunt ut labore et dolore magna aliqua
+    .business-cards-wrapper.container
+        .glide
+            .glide__track(data-glide-el="track")
+                ul.glide__slides
+                    +businessNewsCard
+            .glide__arrows(data-glide-el="controls")
+                button.glide__arrow.glide__arrow--left.flex-center(data-glide-dir="<")
+                button.glide__arrow.glide__arrow--right.flex-center(data-glide-dir=">")
+            .glide__bullets.business-news-bullets(data-glide-el="controls[nav]")
+                +businessNewsBullet
+    .business-news-links.flex-center
+        a.show-all-btn.business-news-link.flex-center(href="#") Voir toutes les actualites
+        a.show-all-btn.business-news-link.flex-center(href="#") Voir toutes les promotions

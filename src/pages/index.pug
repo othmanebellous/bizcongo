@@ -1,8 +1,3 @@
-include ../assets/listes/spotlight-cards-data
-include ../assets/listes/business-news-data
-include ../components/spotlight-cards-generator
-include ../components/business-news-cards
-include ../components/business-news-bullets
 doctype
 html(lang="fr")
     head
@@ -16,6 +11,8 @@ html(lang="fr")
         title Biz Congo
     body 
         include ../layouts/header/header
-        include ../layouts/main/main
+        main    
+            include ../layouts/main/main
+
         script(src="https://cdn.jsdelivr.net/npm/@glidejs/glide") 
         script new Glide('.hero .glide').mount(); new Glide('.business-cards-wrapper .glide', {type: 'carousel',startAt: 0,perView: 4, gap:20, breakpoints: { 1500: { perView: 3}, 1030: { perView: 2, }, 640: { perView: 1, }}, pagination: { el: '.glide__bullets', bullet: '.glide__bullet', }}).mount();

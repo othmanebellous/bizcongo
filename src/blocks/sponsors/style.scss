@@ -1,0 +1,14 @@
+.sponsors {
+    margin: 203px auto 118px;
+}
+
+.sponsors-img{
+    width: 100%;
+}
+
+@media (max-width:1030px) {
+
+    .sponsors {
+        display: none;
+    }
+}

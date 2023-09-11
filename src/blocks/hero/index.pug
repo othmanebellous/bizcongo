@@ -1,0 +1,32 @@
+section.hero 
+    .glide.hero-glide
+        .glide__track(data-glide-el="track")
+            ul.glide__slides
+                li.glide__slide.hero-slide-item
+                    img.hero-img(src="./images/hero.png" alt="")
+                    .hero-content
+                        h1.hero-heading bizcongo
+                        p.hero-paragraph bien plus qu'un répertoire
+                li.glide__slide.hero-slide-item
+                    img.hero-img(src="./images/bizcongo.png" alt="")
+        .glide__arrows.hero-glide-arrows(data-glide-el="controls")
+            button.glide__arrow.glide__arrow--left.flex-center(data-glide-dir="<")
+            button.glide__arrow.glide__arrow--right.flex-center(data-glide-dir=">")
+    .social-links 
+        a.social-link.facebook-link(href="#")
+        a.social-link.twitter-link(href="#")
+        a.social-link.linkedin-link(href="#")
+    a.hero-btn.flex-center(href="#")
+    .search-wrapper.container
+        form.search-form.flex-space-between(action="" method="post") 
+            input.search-input.keywords-input(type="text" placeholder="Mots cles")
+            .localization-input-wrapper
+                input.search-input.localization-input(type="text" placeholder="Localiser votre recherche")
+            .select-wrapper 
+                select.search-select
+                    option.select-option(value="") Secteur d'activité
+                    option.select-option(value="") Test
+                    option.select-option(value="") Test
+                    option.select-option(value="") Test
+            button.location-btn(type="button")
+            button.submit-btn(type="submit") Chercher

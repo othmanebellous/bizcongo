@@ -1,0 +1,219 @@
+.business-news {
+    position: relative;
+    margin: 172px 0 140px;
+    padding-top: 72px;
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 450px;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(124deg, #22252a 0%, #8a94a0 100%);
+        z-index: -1;
+    }
+  }
+
+  .business-news-heading{
+    color: #FFF;
+    &::before, &::after{
+        width: 265px;
+    }
+
+    &::before{
+        background-image: linear-gradient(to right, transparent, white);
+    }
+
+    &::after{
+        background-image: linear-gradient(to left, transparent, white);
+    }
+  }
+
+  .business-news-paragraph{
+    color: #FFF;
+    max-width: 954px;
+    margin: 46px auto 57px;
+  }
+
+  .business-cards-wrapper.container {
+    max-width: 1778px;
+    padding-bottom: 122px;
+  }
+  
+  .business-news-card{
+    position: relative;
+    width: 421px;
+    height: 323px;
+    color: #FFF;
+    padding: 23px 29px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0.872px 9.962px 8px rgba(0,0,0,0.18);
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.67;
+        width: 100%;
+        height: 182px;
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0));
+        z-index: -1;
+    }
+  }
+
+  .business-news-card-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .business-news-card-date {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .business-news-card-day{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .business-news-card-month{
+    font-size: 10px;
+  }
+
+  .news-type{
+    width: 101px;
+    height: 27px;
+    border-radius: 5px;
+    background-color: $mainColor;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 185px 0 10px 0;
+  }
+
+  .business-news-card-heading{
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .business-news-card-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: rgba(253,198,0,0.8);
+    }
+
+    &:hover .know-more{
+        opacity: 1;
+    }
+    }
+
+    .know-more{
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        color: #333;
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 8px;
+        &:hover{
+            background-color: #333;
+            color: $mainColor;
+        }
+        
+  }
+
+  .business-news-bullets{
+    bottom: -54px;
+    cursor: auto;
+  }
+
+  .business-news-bullet{
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    width: 19px;
+    height: 19px;
+    box-shadow: none;
+  }
+
+  .glide__bullet--active {
+    background-color: $mainColor;
+    visibility: visible;
+  }
+
+  .business-news-links {
+    gap: 38px;
+  }
+
+  .business-news-link{
+    margin: 0;
+  }
+
+  @media (max-width:1030px) {
+    .business-news {
+      margin-top: 77px;
+    }
+
+    .business-news-card{
+      width: 571px;
+      height: 438px;
+      &::after{
+          height: 247px;
+      }
+    }
+
+    .business-news-card-day {
+      font-size: 27px;
+    }
+
+    .business-news-card-month {
+      font-size: 13px;
+    }
+
+    .news-type{
+      width: 137px;
+      height: 37px;
+      font-size: 19px;
+      margin: 250px 0 11px 0;
+    }
+
+    .business-news-card-heading{
+      font-size: 38px;
+      letter-spacing: 3px;
+    }
+
+    .business-news-bullets{
+      display: none;
+    }
+  }
+
+  @media (max-width:640px) {
+
+    .business-news::before {
+        height: 1131px;
+    }
+
+    .business-cards-wrapper.container {
+        padding-bottom: 60px;
+      }
+}
+
+@media (max-width:640px) {
+  .business-news-links{
+      flex-direction: column;
+      gap: 20px;
+  }
+  }
+
+  

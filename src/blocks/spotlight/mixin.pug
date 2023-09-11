@@ -1,3 +1,4 @@
+include ./data-list
 mixin spotlightcard
     .main-cards-wrapper.flex-space-between
         each card, index in spotlightCards
@@ -11,10 +12,9 @@ mixin spotlightcard
                             p.main-card-description.desc #{card.description}
                         .main-card-details 
                             time.main-card-date.main-card-detail #{card.date}
-                            span.main-card-comments.main-card-detail #{card.commentsNumber}
-                            span.main-card-shares.main-card-detail #{card.sharesNumber}
-                    button.main-card-btn.show-more-btn(data-content="Afficher plus")
-                    a.spotmightCard-link(href= card.link)  
+                            button.main-card-comments.main-card-detail #{card.commentsNumber}
+                            a.main-card-shares.main-card-detail(href= card.link) #{card.sharesNumber}
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus")  
     .normal-cards-wrapper.flex-space-between
         each card, index in spotlightCards
             if index > 1
@@ -27,7 +27,6 @@ mixin spotlightcard
                             p.card-description.desc #{card.description}
                         .card-details 
                             time.card-date.card-detail #{card.date}
-                            span.card-comments.card-detail #{card.commentsNumber}
-                            span.card-shares.card-detail #{card.sharesNumber}
-                    button.card-btn.show-more-btn(data-content="Afficher plus")
-                    a.spotmightCard-link(href= card.link) 
+                            button.card-comments.card-detail #{card.commentsNumber}
+                            a.card-shares.card-detail(href= card.link) #{card.sharesNumber}
+                    button.card-btn.show-more-btn(data-content="Afficher plus") 

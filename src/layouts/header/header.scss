@@ -1,0 +1,353 @@
+
+
+header{
+    padding-top: 90px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 100%;
+  }
+  
+  
+  .menu-checkbox{
+      display: none;
+  }
+  
+  .menu-label{
+      display: none;
+      cursor: pointer;
+      &::before{
+          content: "\f0c9";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #FFF;
+          font-size: 38px;
+          font-size: 42px;
+      }
+  }
+  
+  .header-nav{
+      flex: 1;
+  }
+  
+  .nav-checkbox{
+      display: none;
+  }
+  
+  .nav-list{
+      font-size: 17px;
+      gap: 33px;
+  }
+  
+  .links-list{
+      max-height: 0;
+      width: 100%;
+      position: absolute;
+      top: 138%;
+      left: 0;
+      overflow: hidden;
+      transition: 0.3s ease-in-out;
+      background-color: rgba(253, 198, 0, 0.4);
+  }
+  
+  .links-list-item {
+      &:not(:last-of-type){
+          border-bottom: 1px solid #333;
+      }
+    }
+  
+  .nav-list-item{
+      position: relative;
+  }
+  
+  .nav-checkbox-label{
+      display: inline-block;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 2px;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      &::after{
+          content: url(../images/down.png);
+          display: inline-block;
+          margin-left: 8px;
+          transform: translateY(-2px);
+          transition: 0.3s ease-in-out;
+      }
+      &:hover{
+          color: $mainColor;
+      }
+  }
+  
+  .list-link{
+      display: block;
+      padding: 9px 6px;
+      color: #FFF;
+      transition: 0.3s ease-in-out;
+      &:hover{
+          color: $mainColor;
+      }
+  }
+  
+  .options-wrapper{
+      position: relative;
+  }
+  
+  .languages-list{
+      max-height: 0;
+      width: fit-content;
+      position: absolute;
+      top: 138%;
+      left: -22px;
+      overflow: hidden;
+      transition: 0.3s ease-in-out;
+      background-color: rgba(253, 198, 0, 0.4);
+  }
+  
+  .language-radio{
+      display: none;
+      &:checked + .language-label{
+          color: $mainColor;
+      }
+  }
+  
+  .language-label{
+      display: block;
+      font-size: 17px;
+      padding: 6px;
+      color: #FFF;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      &:not(:last-of-type) {
+          border-bottom: 1px solid #333;
+      }
+      &:hover{
+          color: $mainColor;
+      }
+  }
+  
+  .language_input{
+      display: none;
+      &:checked +.languages-label + .languages-list{
+          max-height: 300px;
+      }
+  
+      &:checked + .languages-label::before{
+          opacity: 0;
+      }
+  
+      &:checked + .languages-label::after{
+          opacity: 1;
+      }
+  }
+  
+  .languages-label{
+      cursor: pointer;
+      width: 27px;
+      height: 27px;
+      @include bkg-img-transition("../images/languages.png","../images/colored-languages.png");
+  }
+  
+  .options-wrapper{
+      gap: 35px;
+  }
+  
+  
+  .cart-link{
+      width: 32px;
+      height: 32px;
+      @include bkg-img-transition("../images/cart.png","../images/colored-cart.png");
+  }
+  
+  .cart-items{
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background-color: #e40000;
+      border-radius: 50%;
+      right: -6px;
+      top: -3px;
+      color: #FFF;
+      font-size: 10px;
+      font-weight: bold;
+  }
+  
+  .profile-link{
+     width: 21px;
+     height: 30px;
+     @include bkg-img-transition("../images/user.png","../images/colored-user.png");
+  }
+  
+  .links-list{
+      max-height: 0;
+  }
+
+  @media (max-width: 1430px){
+    .nav-list {
+      gap: 16px;
+    }
+    
+    .options-wrapper {
+      gap: 20px;
+    }
+}
+
+
+@media (max-width: 1290px){
+    .nav-list {
+        font-size: 13px;
+      }
+}
+
+@media (max-width: 1255px){
+    .nav-list {
+        font-size: 12px;
+        gap: 10px;
+      }
+}
+
+@media (max-width: 1230px){
+    .nav-list {
+        font-size: 16px;
+      }
+}
+
+@media (max-width: 1155px ){
+    .nav-list {
+        font-size: 11px;
+      }
+      .nav-checkbox-label::after {
+        margin-left: 4px;
+      }
+}
+
+@media (min-width:1031px) {
+    .nav-list-item{
+        &:hover .links-list{
+            max-height: 300px;
+        }
+
+        &:hover .nav-checkbox-label::after{
+            transform: translateY(-2px) rotate(-180deg);
+        }
+    }
+}
+
+@media (max-width:1030px) {
+    header{
+        justify-content: start !important;
+        padding-top: 45px;
+    }
+    .header-nav{
+        width: 50%;
+        background: rgba(0,0,0,0.95);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 110px 16px 0;
+        height: 100vh;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in-out;
+    }
+    .menu-label{
+        display: block;
+        z-index: 2;
+    }
+
+    .menu-checkbox{
+        &:checked ~ .header-nav{
+            transform: translateX(0);
+        }
+        &:checked + .menu-label::before {
+            content: "\58";
+          }
+    }
+
+    .menu-label::before{
+        width: 37px;
+        display: block;
+    }
+
+    .links-list{
+        position: static;
+    }
+
+    .links-list{
+        background-color: transparent;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .nav-checkbox{
+        &:checked ~ .links-list{
+            max-height: 300px;
+            background-color: rgba(253, 198, 0, 0.4);
+        }
+
+        &:checked + .nav-checkbox-label::after{
+            transform: translateY(-2px) rotate(-180deg);
+        }
+    }
+
+    .nav-list{
+        display: block;
+        font-size: 18px;
+    }
+
+    .nav-list-item {
+        margin-bottom: 16px;
+    }
+
+    .logo{
+        flex: 1;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:640px) {
+    .options-wrapper {
+        gap: 23px;
+      }
+}
+
+@media (max-width:480px) {
+    .nav-list{
+        font-size: 16px;
+}
+}
+
+@media (max-width: 400px){
+    .options-wrapper {
+        gap: 12px;
+      }
+    
+    .logo {
+        margin-left: 15px;
+        img{
+            width: 128px;
+        }
+    }
+}
+
+
+@media (max-width: 340px){
+    .menu-label{
+        width: 26.5px;
+        &::before {
+
+            font-size: 30px;
+        }
+        
+        .logo {
+            margin-left: 3px;
+        }
+        
+        .options-wrapper {
+            gap: 6px;
+        }
+    }
+}
