@@ -7,7 +7,7 @@
         position: absolute;
         display: block;
         width: 100%;
-        height: 450px;
+        height: 62%;
         top: 0;
         left: 0;
         background-image: linear-gradient(124deg, #22252a 0%, #8a94a0 100%);
@@ -198,22 +198,24 @@
     }
   }
 
-  @media (max-width:640px) {
+  @media (max-width:640px){
+    .business-news {
+      margin: 77px 0 0;
+      padding: 72px;
+    }
 
     .business-news::before {
-        height: 1131px;
+      height: 100%;
     }
 
     .business-cards-wrapper.container {
         padding-bottom: 60px;
       }
-}
 
-@media (max-width:640px) {
-  .business-news-links{
-      flex-direction: column;
-      gap: 20px;
-  }
-  }
+      .business-news-links{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
 
   

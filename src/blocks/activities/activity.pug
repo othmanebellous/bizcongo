@@ -1,0 +1,26 @@
+include ./data-list
+mixin activity
+    input.activities-radio(type="radio" name="activities" id="les-plus-consultés")
+    label.activities-label.flex-space-between(for="les-plus-consultés") Les plus consultés
+    ul.activities-list.flex-space-between
+        each activity in activitiesData
+            each subActivity in activity.subActivities
+                - const activityImg = subActivity.title.replace(/, +|,| +/g, '-').toLowerCase();
+                li.activities-list-item.flex-center
+                    img.activity-img(src="./images/" + activityImg + ".png")
+                    p.activity-text #{subActivity.title}
+                    a.activity-link(href=subActivity.link)
+    each activity, index in activitiesData
+        - const activityId = activity.activityType.replace(/, +|,| +/g, '-').toLowerCase();
+        if index === 0
+            input.activities-radio(type="radio" name="activities", id=activityId, checked)
+        else    
+            input.activities-radio(type="radio" name="activities", id=activityId)
+        label.activities-label.flex-space-between(for=activityId) #{activity.activityType}
+        ul.activities-list.flex-space-between
+            each subActivity in activity.subActivities
+                - const activityImg = subActivity.title.replace(/, +|,| +/g, '-').toLowerCase();
+                li.activities-list-item.flex-center
+                    img.activity-img(src="./images/" + activityImg + ".png")
+                    p.activity-text #{subActivity.title}
+                    a.activity-link(href=subActivity.link)

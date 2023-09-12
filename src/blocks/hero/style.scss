@@ -134,6 +134,19 @@
         font-weight: 900;
         font-size: 42px;
     }
+    &::after {
+        content: "";
+        display: block;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+    }
 }
 
 .search-form{

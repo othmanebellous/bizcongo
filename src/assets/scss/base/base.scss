@@ -91,18 +91,27 @@ a{
         color: #f0b300;
         background: beige;
       }
-  }
+    }
+    .mobile-img{
+        display: none;
+    }
 
 @media (max-width:1030px) {
 
       .section-paragraph {
-        margin: 35px auto 46px;
+        margin: 35px auto 43px;
       }
 }
 
 
 
 @media (max-width:640px) {
+    .desktop-img{
+        display: none;
+    }
+    .desktop-img{
+        display: initial;
+    }
   .section-heading, .section-paragraph{
     max-width: 569px;
   }

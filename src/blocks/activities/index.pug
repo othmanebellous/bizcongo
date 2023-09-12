@@ -1,3 +1,15 @@
+include ./activity
 section.activities
     h2.section-heading.flex-center Secteur d'activite
     p.section-paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua incididunt ut labore et dolore magna aliqua
+    .activities-wrapper.container.flex-space-between
+        .activities-search.flex-center
+            input.activities-search-input(type="search" placeholder="Recherche")
+        .activities-holder
+            .activities-overflow-container
+                +activity
+
+
+
+
+

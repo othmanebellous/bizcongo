@@ -1,0 +1,48 @@
+.multiple-ads-wrapper{
+    background-color: $mainColor;
+}
+
+.multiple-ads{
+    margin: 0 auto;
+    max-width: 1363px;
+    background-image: url(../images/ad-background.jpg);
+    padding: 45px 63px;
+}
+
+.ad-link{
+    display: block;
+    width: 307px;
+}
+
+.ad-img{
+    width: 100%;
+    height: auto;
+    border: 10px solid #fff;
+}
+
+.simple-ads-wrapper {
+    margin: 86px 0 139px;
+    text-align: center;
+  }
+
+@media (max-width:1060px) {
+    .multiple-ads{
+    flex-direction: column;
+    gap: 15px;
+    }
+}
+
+@media (max-width:640px) {
+    .multiple-ads{
+        gap: 26px;
+        max-width: 1363px;
+        padding: 16px 0 26px;
+    }
+    .ad-link{
+        width: 267px;
+    }
+
+    .ad-img{
+        border: none;
+    }
+}
