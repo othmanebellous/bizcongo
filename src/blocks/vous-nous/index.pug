@@ -1,0 +1,20 @@
+include ./card
+section.vous-nous
+    h2.section-heading.flex-center Vous & Nous
+    p.section-paragraph Petites annonces, bons plans, infos pratiques, agenda et événements
+    .vous-nous-content.container.flex-space-between
+        input.vous-nous-input(type="radio" name="vous-nous" id="events" checked)
+        label.vous-nous-label(for="events") Top événements
+        .vous-nous-cards.main-cards-wrapper.flex-space-between  
+            +content("event")
+            a.show-all-btn.vous-nous-link.flex-center(href="#") Voir tous les événements
+        input.vous-nous-input(type="radio" name="vous-nous" id="announces")
+        label.vous-nous-label(for="announces") 	Petites annonces
+        .vous-nous-cards.main-cards-wrapper.flex-space-between  
+            +content("announce")
+            a.show-all-btn.vous-nous-link.flex-center(href="#") Voir tous les annonces
+        input.vous-nous-input(type="radio" name="vous-nous" id="jobs")
+        label.vous-nous-label(for="jobs") Demandeurs d'emploi
+        .vous-nous-cards.main-cards-wrapper.flex-space-between  
+            +content("job")
+            a.show-all-btn.vous-nous-link.flex-center(href="#") Voir tous les demandeurs d'emploi

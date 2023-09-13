@@ -1,0 +1,47 @@
+include ./data-list
+mixin content(type)
+    if type === "event"
+        each event, index in events 
+            if index < 2
+                article.main-card.flex-align-center 
+                    .main-card-img-holder.vous-nous-img-holder
+                        img.main-card-img(src=event.image, alt="")
+                    .main-card-infos
+                        h3.main-card-heading #{event.title}
+                        .main-card-paragraph-wrapper
+                            p.main-card-description.desc #{event.description}
+                        .main-card-details 
+                            time.main-card-date.main-card-detail #{event.date}
+                            button.main-card-comments.main-card-detail #{event.commentsNumber}
+                            a.main-card-shares.main-card-detail(href= event.link) #{event.sharesNumber}
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus") 
+    else if type === "announce"
+        each announce, index in announces 
+            if index < 2
+                article.main-card.flex-align-center 
+                    .main-card-img-holder.vous-nous-img-holder
+                        img.main-card-img(src=announce.image, alt="")
+                    .main-card-infos
+                        h3.main-card-heading #{announce.title}
+                        .main-card-paragraph-wrapper
+                            p.main-card-description.desc #{announce.description}
+                        .main-card-details 
+                            time.main-card-date.main-card-detail #{announce.date}
+                            button.main-card-comments.main-card-detail #{announce.commentsNumber}
+                            a.main-card-shares.main-card-detail(href= announce.link) #{announce.sharesNumber}
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus") 
+    else
+        each job, index in jobs 
+            if index < 2
+                article.main-card.flex-align-center 
+                    .main-card-img-holder.vous-nous-img-holder
+                        img.main-card-img(src=job.image, alt="")
+                    .main-card-infos
+                        h3.main-card-heading #{job.title}
+                        .main-card-paragraph-wrapper
+                            p.main-card-description.desc #{job.description}
+                        .main-card-details 
+                            time.main-card-date.main-card-detail #{job.date}
+                            button.main-card-comments.main-card-detail #{job.commentsNumber}
+                            a.main-card-shares.main-card-detail(href= job.link) #{job.sharesNumber}
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus") 
