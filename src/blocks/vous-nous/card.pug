@@ -3,7 +3,7 @@ mixin content(type)
     if type === "event"
         each event, index in events 
             if index < 2
-                article.main-card.flex-align-center 
+                article.main-card.vous-nous-card.flex-align-center 
                     .main-card-img-holder.vous-nous-img-holder
                         img.main-card-img(src=event.image, alt="")
                     .main-card-infos

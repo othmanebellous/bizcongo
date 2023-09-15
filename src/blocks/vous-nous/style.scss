@@ -81,13 +81,15 @@
         height: 339px;
     }
 
-    .main-card-heading{
-        font-size: 23px;
-        letter-spacing: 2px;
-    }
-    .main-card-description{
-        font-size: 14px;
-        line-height: 20px;
+    .vous-nous{
+        .main-card-heading{
+            font-size: 23px;
+            letter-spacing: 2px;
+        }
+        .main-card-description{
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 
 }

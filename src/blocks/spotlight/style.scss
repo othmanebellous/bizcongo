@@ -304,6 +304,17 @@
 .main-card-btn::after, .card-btn::after{
   display: none;
 }
+
+.main-card-heading, .card-heading{
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.main-card-description, .card-description{
+  font-size: 24px;
+  line-height: 32px;
+  word-spacing: 8px;
+}
 }
 
 
