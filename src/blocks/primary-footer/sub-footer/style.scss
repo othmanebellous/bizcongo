@@ -171,12 +171,16 @@
         width:100%;
       }
 
-      .news-letter-form{
+      .newsletter-form{
         justify-content: center;
       }
 
-      .news-letter-input{
+      .newsletter-input{
         max-width: 500px;
+      }
+
+      .newsletter-btn {
+        flex-shrink: 0;
       }
 
 
@@ -189,5 +193,8 @@
     }
     .sub-footer-link {
         font-size: 17px;
+    }
+    .newsletter-input{
+      max-width: 100%;
     }
 }
