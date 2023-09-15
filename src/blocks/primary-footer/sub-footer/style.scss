@@ -4,6 +4,7 @@
     padding: 35px 26px 32px;
     margin-top: 41px;
     align-items: flex-start;
+    gap: 15px;
 }
 
 .payment-methods{
@@ -113,13 +114,16 @@
     }
   }
 
-@media (max-width:640px) {
+@media (max-width:1030px) {
     .sub-footer{
         padding: 76px 49px 58px;
+        flex-direction: column;
+        gap: 0;
     }
     .sub-footer-heading{
         font-size: 30px;
         text-align: center;
+        line-height: 35px;
     }
 
     .payment-methods {
@@ -157,6 +161,26 @@
             margin: 0;
         }
       }
+
+      .reservation-wrapper {
+        margin: 52px 0 41px;
+      }
+
+
+      .newsletter-wrapper, .payment-methods-wrapper, .reservatoion-wrapper{
+        width:100%;
+      }
+
+      .news-letter-form{
+        justify-content: center;
+      }
+
+      .news-letter-input{
+        max-width: 500px;
+      }
+
+
+
 }
 
 @media (max-width:450px) {

@@ -125,7 +125,7 @@
     height: 60px;
     border-radius: 50%;
     box-shadow: 0.349px 3.985px 5px rgba(0,0,0,0.22);
-    z-index: 2;
+    z-index: 200;
     color: $mainColor;
     transition: 0.3s ease-in-out;
     &::before{
@@ -321,11 +321,6 @@
         right: 16px;
         width: 82px;
         height: 82px;
-        border-radius: 50%;
-        box-shadow: 0.349px 3.985px 5px rgba(0,0,0,0.22);
-        z-index: 2;
-        color: $mainColor;
-        transition: 0.3s ease-in-out;
         &::before{
             font-size: 57px;
         }
