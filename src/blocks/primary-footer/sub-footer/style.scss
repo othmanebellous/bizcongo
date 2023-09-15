@@ -1,0 +1,169 @@
+.sub-footer{
+    background-color: rgba(0,0,0,0.03);
+    border-radius: 8px;
+    padding: 35px 26px 32px;
+    margin-top: 41px;
+    align-items: flex-start;
+}
+
+.payment-methods{
+    margin-top: 14px;
+    gap: 18px;
+}
+
+.sub-footer-heading{
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #525252;
+    font-weight: bold;
+}
+
+.sub-footer-paragraph{
+    font-size: 18px;
+    line-height: 25px;
+    color: #727272;
+    font-weight: 300;
+    margin: 13px 0 16px;
+    max-width: 382px;
+}
+
+.sub-footer-link{
+   margin-right: 7px;
+   height: 38px;
+   width: 180px;
+   &:nth-of-type(2){
+    background-color: #000;
+   }
+}
+
+.smartphone-img{
+    width: 17px;
+}
+
+.credit-img{
+    width:24px;
+}
+
+.cheque-img{
+    width: 29px;
+}
+
+.virement-img{
+    width: 76px;
+}
+
+.paypal-img{
+    width: 54px;
+}
+
+.money-img{
+    width:32px;
+}
+
+.reservation-list-wrapper{
+    margin-top: 34px;
+    gap: 11px;
+}
+
+.reservation-list-item {
+    font-size: 18px;
+    line-height: 25px;
+    color: #727272;
+    font-weight: 300;
+    word-spacing: 3px;
+    &::before {
+        content: "•";
+        font-size: 8px;
+        margin-right: 5px;
+      }
+  }
+
+  .newsletter-form{
+    margin-top: 34px;
+  }
+
+  .newsletter-input{
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 61px;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #727272;
+    font-weight: 300;
+    padding: 0 34px;
+    flex: 1;
+    border: none;
+    outline: none;
+  }
+
+  .newsletter-btn{
+    width: 61px;
+    height: 61px;
+    border-radius: 0 5px 5px 0;
+    background-color: $mainColor;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &::before{
+        content: url(../images/send-arrow.png);
+    }
+    &:hover{
+        background-color: #eec039;
+    }
+  }
+
+@media (max-width:640px) {
+    .sub-footer{
+        padding: 76px 49px 58px;
+    }
+    .sub-footer-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .payment-methods {
+        margin-top: 16px;
+        gap: 27px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .sub-footer-paragraph {
+        font-size: 18px;
+        line-height: 25px;
+        color: #727272;
+        font-weight: 300;
+        margin: 18px 0 28px;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .sub-footer-links{
+        display: flex;
+        align-items: center;
+      }
+
+      .sub-footer-link {
+        font-size: 20px;
+        height: 77px;
+        width: calc(50% - 10px);
+        text-align: center;
+        padding: 0px 7px;
+        &:not(:last-of-type){
+            margin-right: 20px;
+        }
+        &:last-of-type{
+            margin: 0;
+        }
+      }
+}
+
+@media (max-width:450px) {
+    .sub-footer-heading{
+        font-size: 25px;
+    }
+    .sub-footer-link {
+        font-size: 17px;
+    }
+}

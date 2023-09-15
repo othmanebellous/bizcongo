@@ -23,6 +23,12 @@ a{
     align-items: center;
 }
 
+.inline-flex-center{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .flex-space-between{
     display: flex;
     justify-content: space-between;
@@ -37,6 +43,12 @@ a{
 .flex-align-start{
     display: flex;
     align-items: start;
+}
+
+.flex-center-align-start{
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
 
 .container{

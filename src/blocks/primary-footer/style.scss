@@ -1,0 +1,143 @@
+@import "./sub-footer/style.scss";
+
+.primary-footer{
+    background-color: rgba(0,0,0,0.040);
+    padding: 146px 0 36px;
+}
+.primary-footer-nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+.primary-footer-nav-links{
+    padding: 0 clamp(1px,5.5847568988vw,85px) 20px;
+    &:not(:first-child){
+        border: 1px solid;
+        border-color: transparent transparent transparent rgba(0,0,0,0.12);
+    }
+    &.contact{
+        border-color: transparent;
+        padding-left: 0;
+    }
+    &:nth-child(2){
+        grid-area: 2/1/2/2;
+    }
+    &:nth-child(6){
+        grid-area: 2/2/2/3;
+    }
+    &:nth-child(7){
+        grid-area: 2/3/2/4;
+    }
+}
+
+
+.primary-footer-brief-text {
+    margin: 27px 0 37px;
+    max-width: 312px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #727272;
+    font-weight: 300;
+}
+    
+
+    
+
+
+
+.primary-footer-nav-links-heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $mainColor;
+    margin-bottom: 20px;
+}
+
+.primary-footer-nav-list-link {
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+    color: #727272;
+    font-weight: 300;
+    gap: 15px;
+    transition: 0.3s ease-in-out;
+    &::before{
+        display: flex;
+    }
+    &:hover{
+        color: $mainColor;
+    }
+
+}
+
+.email-link, .phone-link, .mobile-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.email-link{
+    &::before{
+        content: url(../images/email.png);
+    }
+}
+
+.phone-link{
+    &::before{
+        content: url(../images/phone-call.png);
+    }
+}
+
+.mobile-link{
+    &::before{
+        content: url(../images/smartphone.png);
+    }
+}
+
+
+@media (max-width:1060px) {
+    .primary-footer-nav-links {
+        padding: 0 20px 20px;
+    }
+}
+
+@media (max-width:818px) {
+    .primary-footer-nav{
+        display: block;
+    }
+
+    .primary-footer-brief-text {
+        max-width: 100%;
+        font-size: 22px;
+    }
+
+    .primary-footer-nav-links{
+        border-color: rgba(0,0,0,0.12) transparent transparent transparent !important;
+    }
+
+    .primary-footer {
+        background-color: rgba(0,0,0,.04);
+        padding: 60px 0 71px;
+    }
+    
+    .primary-footer-brief-text {
+        margin: 27px 0 53px;
+    }
+
+    .primary-footer-nav-links {
+        padding: 41px 0 36px;
+    }
+
+    .primary-footer-nav-links-heading {
+        font-size: 30px;
+        margin-bottom: 28px;
+    }
+
+    .primary-footer-nav-list-link {
+        font-size: 22px;
+    }
+}
+
+
+
+

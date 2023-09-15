@@ -1,0 +1,23 @@
+include ./nav-links
+section.primary-footer 
+    nav.primary-footer-nav.container
+        .primary-footer-brief
+            a.primary-footer-logo-link("#")     
+                img.footer-logo(src="./images/footer-logo.png" alt="")
+            p.primary-footer-brief-text Avec BIZCONGO, trouvez beaucoup plus que des coordonnées ! Professionnels, Promotions, Achats en Ligne, Emploi, Appels d’Offres, Petites Annonces, Actualités, Evènements, Horaires …
+        .primary-footer-nav-links.contact
+            h4.primary-footer-nav-links-heading contact
+            ul.primary-footer-nav-list
+                li.primary-footer-nav-list-item
+                    a.primary-footer-nav-list-link.email-link(href="mailto:serviceclient@bizcongo.com") serviceclient@bizcongo.com
+                li.primary-footer-nav-list-item
+                    a.primary-footer-nav-list-link.phone-link(href="tel:(+243)822205257") (+243)822205257 
+                li.primary-footer-nav-list-item
+                    a.primary-footer-nav-list-link.mobile-link(href="tel:(+243)812318573") (+243)812318573
+                li.primary-footer-nav-list-item
+                    a.primary-footer-nav-list-link.mobile-link(href="tel:(+243)900757575") (+243)900757575
+
+        +footerNavLinks
+    include ./sub-footer/index
+
+

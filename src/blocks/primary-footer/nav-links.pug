@@ -1,0 +1,9 @@
+include ./data-list
+mixin footerNavLinks 
+    each navLinksCategory in navLinksCategories
+        .primary-footer-nav-links
+            h4.primary-footer-nav-links-heading #{navLinksCategory.category}
+            ul.primary-footer-nav-list
+                each navLink in navLinksCategory.links
+                    li.primary-footer-nav-list-item
+                        a.primary-footer-nav-list-link(href=navLink.href) #{navLink.title}
