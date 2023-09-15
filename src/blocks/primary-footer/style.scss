@@ -138,6 +138,20 @@
     }
 }
 
+@media (max-width:400px) {
+    .primary-footer-nav-links-heading {
+        margin-bottom: 16px;
+      }
+    
+      .primary-footer-nav-links {
+        padding: 36px 0 36px;
+      }
+    
+      .primary-footer-nav-list-link {
+        line-height: 32px;
+      }
+}
+
 
 
 
