@@ -2,11 +2,23 @@ include ./association-links-list
 section.secondary-footer 
     .secondary-footer-container.container.flex-space-between
         .secondary-footer-heading-wrapper
-            .container
-                h4.secondary-footer-heading ANNUAIRE DES ENTREPRISES ET ORGANISMES PARTENAIRES
+            h4.secondary-footer-heading ANNUAIRE DES ENTREPRISES ET ORGANISMES PARTENAIRES
         .associations-wrapper 
             .associations-container.container.flex-align-center
                 +associationLinksList
+section.secondary-sub-footer
+    .secondary-sub-footer-wrapper.container.flex-space-between
+        p.copyright Bizcongo 2022 &copy; tous droits réservés
+        ul.legal-links-list.flex-align-center
+            li.legal-link-item.flex-align-center
+                a.legal-link(href="#") a propos
+            li.legal-link-item.flex-align-center 
+                a.legal-link(href="#") faq
+            li.legal-link-item.flex-align-center 
+                a.legal-link(href="#") mentions légales
+            li.legal-link-item.flex-align-center 
+                a.legal-link(href="#") plan du site
+
 
 
 
