@@ -1,0 +1,7 @@
+include ./data-list
+mixin associationLinksList 
+    each asscociationList in asscociationLists
+        ul.association-list
+            each asscociationListLink in asscociationList.asscociationListLinks
+                li.associations-list-item
+                    a.associations-link(href=asscociationListLink.href) #{asscociationListLink.title}

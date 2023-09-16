@@ -1,9 +1,25 @@
 .sub-footer{
+    margin: 41px auto 0;
+}
+
+.sub-footer-content-wrapper{
+  position: relative;
+  padding: 35px 26px 37px;
+  &::before{
+    content: "";
+    position: absolute;
+    height: calc(100% - 119px);
+    width: 100%;
+    top: 0;
+    left: 0;
     background-color: rgba(0,0,0,0.03);
     border-radius: 8px;
-    padding: 35px 26px 32px;
-    margin-top: 41px;
-    align-items: flex-start;
+    z-index: -1;
+  }
+}
+
+.sub-footer-content{
+  align-items: flex-start;
     gap: 15px;
 }
 
@@ -114,12 +130,67 @@
     }
   }
 
+  .footer-social-list {
+    margin-top: 68px;
+  }
+
+  .footer-social-list-item{
+    &:not(:last-of-type){
+        margin-right: 33px;
+    }
+}
+
+.footer-social-link{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: $mainColor;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+    &::before{
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 900;
+        font-size: 24px;
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover{
+        background-color: transparent;
+        &::before{
+            color: $mainColor;
+        }
+    }
+
+    &.instagram::before{
+        content: "\f16d";
+    }
+    &.facebook::before{
+        content: "\f39e";
+    }
+    &.linkedin::before{
+        content: "\f0e1";
+    }
+    &.twitter::before{
+        content: "\f099";
+    }
+    &.youtube::before{
+        content: "\f167";
+    }
+}
+
 @media (max-width:1030px) {
-    .sub-footer{
-        padding: 76px 49px 58px;
-        flex-direction: column;
+    .sub-footer-content-wrapper{
+      padding: 64px 49px 70px;
+      &::before{
+        height: 100%;
+      }
+    }
+
+    .sub-footer-content{
+      flex-direction: column;
         gap: 0;
     }
+
     .sub-footer-heading{
         font-size: 30px;
         text-align: center;
@@ -167,7 +238,7 @@
       }
 
 
-      .newsletter-wrapper, .payment-methods-wrapper, .reservatoion-wrapper{
+      .newsletter-wrapper, .payment-methods-wrapper, .reservation-wrapper{
         width:100%;
       }
 
@@ -183,8 +254,20 @@
         flex-shrink: 0;
       }
 
+      .sub-footer::before {
+        height: calc(100%);
+      } 
 
+      .footer-social-list-item{
+        &:not(:last-of-type){
+            margin-right: 48px;
+        }
+    }
 
+    .footer-social-link{
+        width: 67px;
+        height: 67px;
+    }
 }
 
 @media (max-width:450px) {

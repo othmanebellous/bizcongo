@@ -1,27 +1,41 @@
-section.sub-footer.container.flex-space-between
-    .payment-methods-wrapper 
-        h4.sub-footer-heading Modes de paiement
-        .payment-methods.flex-align-center
-            img.money-img(src="./images/money.png")
-            img.paypal-img(src="./images/paypal.png")
-            img.virement-img(src="./images/virement-bancaire.png")
-            img.cheque-img(src="./images/cheque.png")
-            img.credit-img(src="./images/credit-card.png")
-            img.smartphone-img(src="./images/smartphone-payment.png")
-        p.sub-footer-paragraph Le type de paiement accepté par un magasin, est visible sur sa page et représenté par un logo.
-        .sub-footer-links
-            a.show-all-btn.sub-footer-link.inline-flex-center(href="#") Abonnement premium
-            a.show-all-btn.sub-footer-link.inline-flex-center(href="#") Abonnement gratuit
-    .reservation-wrapper
-        h4.sub-footer-heading Réserver en magasin
-        .reservation-list-wrapper.flex-align-center
-            img.reservation-img(src="./images/store.png")
-            ul.reservation-list 
-                li.reservation-list-item.flex-align-center Je réserve mes produits en ligne.
-                li.reservation-list-item.flex-align-center Je reçois une confirmation que mes produits sont disponibles.
-                li.reservation-list-item.flex-align-center Je me rends au magasin pour les récupérer et payer.
-    .newsletter-wrapper     
-        h4.sub-footer-heading S'abonner à la Newsletter
-        form.newsletter-form(action="").flex-align-center
-            input.newsletter-input(type="email" name="email" placeholder="Votre email") 
-            button.newsletter-btn(type="submit") 
+section.sub-footer.container 
+    .sub-footer-content-wrapper
+        .sub-footer-content.flex-space-between
+            .payment-methods-wrapper 
+                h4.sub-footer-heading Modes de paiement
+                .payment-methods.flex-align-center
+                    img.money-img(src="./images/money.png")
+                    img.paypal-img(src="./images/paypal.png")
+                    img.virement-img(src="./images/virement-bancaire.png")
+                    img.cheque-img(src="./images/cheque.png")
+                    img.credit-img(src="./images/credit-card.png")
+                    img.smartphone-img(src="./images/smartphone-payment.png")
+                p.sub-footer-paragraph Le type de paiement accepté par un magasin, est visible sur sa page et représenté par un logo.
+                .sub-footer-links
+                    a.show-all-btn.sub-footer-link.inline-flex-center(href="#") Abonnement premium
+                    a.show-all-btn.sub-footer-link.inline-flex-center(href="#") Abonnement gratuit
+            .reservation-wrapper
+                h4.sub-footer-heading Réserver en magasin
+                .reservation-list-wrapper.flex-align-center
+                    img.reservation-img(src="./images/store.png")
+                    ul.reservation-list 
+                        li.reservation-list-item.flex-align-center Je réserve mes produits en ligne.
+                        li.reservation-list-item.flex-align-center Je reçois une confirmation que mes produits sont disponibles.
+                        li.reservation-list-item.flex-align-center Je me rends au magasin pour les récupérer et payer.
+            .newsletter-wrapper     
+                h4.sub-footer-heading S'abonner à la Newsletter
+                form.newsletter-form(action="").flex-align-center
+                    input.newsletter-input(type="email" name="email" placeholder="Votre email") 
+                    button.newsletter-btn(type="submit") 
+        .footer-social.container
+            ul.footer-social-list.flex-center
+                li.footer-social-list-item 
+                    a.footer-social-link.instagram.flex-center(href="#")
+                li.footer-social-list-item 
+                    a.footer-social-link.facebook.flex-center(href="#")
+                li.footer-social-list-item 
+                    a.footer-social-link.linkedin.flex-center(href="#")
+                li.footer-social-list-item 
+                    a.footer-social-link.twitter.flex-center(href="#")
+                li.footer-social-list-item 
+                    a.footer-social-link.youtube.flex-center(href="#")
