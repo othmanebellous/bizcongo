@@ -99,9 +99,11 @@ a{
     color: #FFF;
     font-weight: bold;
     transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
     &:hover {
-        color: #f0b300;
-        background: beige;
+        color: $mainColor;
+        background: white;
+        border-color: $mainColor;
       }
     }
     .mobile-img{
@@ -129,6 +131,11 @@ a{
   }
   .section-heading{
     margin: 0 auto;
+    gap: 37px;
+    &::before, &::after{
+        content: "";
+        width: 91px;
+    }
   }
 }
 
