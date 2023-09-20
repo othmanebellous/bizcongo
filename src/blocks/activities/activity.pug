@@ -7,7 +7,7 @@ mixin activity
             each subActivity in activity.subActivities
                 - const activityImg = subActivity.title.replace(/, +|,| +/g, '-').toLowerCase();
                 li.activities-list-item.flex-center
-                    img.activity-img(src="./images/" + activityImg + ".png")
+                    img.activity-img(src="./images/" + activityImg + ".png", alt=subActivity.title)
                     p.activity-text #{subActivity.title}
                     a.activity-link(href=subActivity.link)
     each activity, index in activitiesData
@@ -21,6 +21,6 @@ mixin activity
             each subActivity in activity.subActivities
                 - const activityImg = subActivity.title.replace(/, +|,| +/g, '-').toLowerCase();
                 li.activities-list-item.flex-center
-                    img.activity-img(src="./images/" + activityImg + ".png")
+                    img.activity-img(src="./images/" + activityImg + ".png", alt=subActivity.title)
                     p.activity-text #{subActivity.title}
                     a.activity-link(href=subActivity.link)

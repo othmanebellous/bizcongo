@@ -11,7 +11,7 @@ mixin spotlightcard
                         .main-card-paragraph-wrapper
                             p.main-card-description.desc #{card.description}
                         .main-card-details 
-                            time.main-card-date.main-card-detail #{card.date}
+                            time.main-card-date.main-card-detail(datetime="2022-10-05") #{card.date}
                             button.main-card-comments.main-card-detail #{card.commentsNumber}
                             a.main-card-shares.main-card-detail(href= card.link) #{card.sharesNumber}
                     button.main-card-btn.show-more-btn(data-content="Afficher plus")  
@@ -26,7 +26,7 @@ mixin spotlightcard
                         .card-paragraph-wrapper
                             p.card-description.desc #{card.description}
                         .card-details 
-                            time.card-date.card-detail #{card.date}
+                            time.card-date.card-detail(datetime="2022-10-05") #{card.date}
                             button.card-comments.card-detail #{card.commentsNumber}
                             a.card-shares.card-detail(href= card.link) #{card.sharesNumber}
                     button.card-btn.show-more-btn(data-content="Afficher plus") 

@@ -1,13 +1,13 @@
 header.flex-space-between.container
-    input.menu-checkbox(type="checkbox", id="menu")
+    input.menu-checkbox(type="checkbox" id="menu")
     label.menu-label(for="menu") 
     .logo
         a(href="#") 
-            img(src="./images/logo.png", alt="Biz Congo Logo")
+            img(src="./images/logo.png" alt="Biz Congo Logo")
     nav.header-nav
         ul.nav-list.flex-center
             li.nav-list-item
-                input.nav-checkbox(type="checkbox", id="checkbox-1")
+                input.nav-checkbox(type="checkbox" id="checkbox-1" name="checkbox-1")
                 label.nav-checkbox-label(for="checkbox-1") A la une
                 ul.links-list
                     li.links-list-item
@@ -15,7 +15,7 @@ header.flex-space-between.container
                     li.links-list-item
                         a(class="list-link" href="#") Agenda culturel
             li.nav-list-item
-                input.nav-checkbox(type="checkbox", id="checkbox-2")
+                input.nav-checkbox(type="checkbox" id="checkbox-2" name="checkbox-2")
                 label.nav-checkbox-label(for="checkbox-2") Travailler en rdc
                 ul.links-list
                     li.links-list-item
@@ -29,7 +29,7 @@ header.flex-space-between.container
                     li.links-list-item
                         a(class="list-link" href="#") Les communiqués
             li.nav-list-item
-                input.nav-checkbox(type="checkbox", id="checkbox-3")
+                input.nav-checkbox(type="checkbox" id="checkbox-3" name="checkbox-3")
                 label.nav-checkbox-label(for="checkbox-3") Appels d'offres
                 ul.links-list
                     li.links-list-item
@@ -45,7 +45,7 @@ header.flex-space-between.container
                     li.links-list-item
                         a(class="list-link" href="#") Attribution de marchés 
             li.nav-list-item
-                input.nav-checkbox(type="checkbox", id="checkbox-4")
+                input.nav-checkbox(type="checkbox" id="checkbox-4" name="checkbox-4")
                 label.nav-checkbox-label(for="checkbox-4") Bons plans
                 ul.links-list
                     li.links-list-item
@@ -55,7 +55,7 @@ header.flex-space-between.container
                     li.links-list-item
                         a(class="list-link" href="#") Petites Annonces
             li.nav-list-item
-                input.nav-checkbox(type="checkbox", id="checkbox-5")
+                input.nav-checkbox(type="checkbox" id="checkbox-5" name="checkbox-5")
                 label.nav-checkbox-label(for="checkbox-5") Infos pratiques
                 ul.links-list
                     li.links-list-item
@@ -71,14 +71,14 @@ header.flex-space-between.container
                     li.links-list-item
                         a(class="list-link" href="#") Météo
     .options-wrapper.flex-align-center
-        input(class="language_input" type="checkbox", name="" id="language")
+        input(class="language_input" type="checkbox" id="language" name="language-checkbox")
         label.languages-label.flex-center(for="language")
         .languages-list
-            input.language-radio(type="radio", id="french", name="language", checked)
+            input.language-radio(type="radio" id="french" name="language", checked)
             label.language-label(for="french") Français
-            input.language-radio(type="radio", id="english", name="language")
+            input.language-radio(type="radio" id="english" name="language")
             label.language-label(for="english") English
-            input.language-radio(type="radio", id="spanish", name="language")
+            input.language-radio(type="radio" id="spanish" name="language")
             label.language-label(for="spanish") Español
         a.cart-link(href="#")
             span.cart-items.flex-center 3
