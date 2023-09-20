@@ -81,7 +81,7 @@
           <label class="language-label" for="english">English</label>
           <input class="language-radio" type="radio" id="spanish" name="language">
           <label class="language-label" for="spanish">Español</label>
-        </div><a class="cart-link" href="#"><span class="cart-items flex-center">3</span></a><a class="profile-link flex-align-center" href="#"></a>
+        </div><a class="cart-link" href="#"><span class="cart-items flex-center">3</span></a><a class="profile-link flex-align-center" href="#" title="Profil"></a>
       </div>
     </header>
     <main>   
@@ -100,11 +100,11 @@
             </ul>
           </div>
           <div class="glide__arrows hero-glide-arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left flex-center" data-glide-dir="&lt;"></button>
-            <button class="glide__arrow glide__arrow--right flex-center" data-glide-dir="&gt;"></button>
+            <button class="glide__arrow glide__arrow--left flex-center" data-glide-dir="&lt;" aria-label="Diapositive précédente"></button>
+            <button class="glide__arrow glide__arrow--right flex-center" data-glide-dir="&gt;" aria-label="Diapositive suivante"></button>
           </div>
         </div>
-        <div class="social-links"> <a class="social-link facebook-link" href="#"></a><a class="social-link twitter-link" href="#"></a><a class="social-link linkedin-link" href="#"></a></div><a class="hero-btn flex-center" href="#hero"></a>
+        <div class="social-links"> <a class="social-link facebook-link" href="#" title="Facebook"></a><a class="social-link twitter-link" href="#" title="Twitter"></a><a class="social-link linkedin-link" href="#" title="Linkedin"></a></div><a class="hero-btn flex-center" href="#hero" title="back to top"></a>
         <div class="search-wrapper container">
           <form class="search-form flex-space-between"> 
             <input class="search-input keywords-input" type="text" placeholder="Mots cles">
@@ -119,7 +119,7 @@
                 <option class="select-option" value="">Test</option>
               </select>
             </div>
-            <button class="location-btn" type="button"></button>
+            <button class="location-btn" type="button" aria-label="Activer la localisation"></button>
             <button class="submit-btn" type="submit">Chercher</button>
           </form>
         </div>
@@ -172,7 +172,7 @@
                         <button class="card-comments card-detail">10</button><a class="card-shares card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article>
                   <article class="card flex-align-center">
                     <div class="card-img-holder"> <img class="card-img" src="./images/card-4.png" alt=""></div>
@@ -186,7 +186,7 @@
                         <button class="card-comments card-detail">10</button><a class="card-shares card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article>
                   <article class="card flex-align-center">
                     <div class="card-img-holder"> <img class="card-img" src="./images/card-5.png" alt=""></div>
@@ -200,7 +200,7 @@
                         <button class="card-comments card-detail">10</button><a class="card-shares card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article>
                 </div>
         </div><a class="show-all-btn flex-center" href="#">Voir toutes les actualites</a>
@@ -265,15 +265,15 @@
               </ul>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
-              <button class="glide__arrow glide__arrow--left flex-center" data-glide-dir="&lt;"></button>
-              <button class="glide__arrow glide__arrow--right flex-center" data-glide-dir="&gt;"></button>
+              <button class="glide__arrow glide__arrow--left flex-center" data-glide-dir="&lt;" aria-label="Diapositive précédente"></button>
+              <button class="glide__arrow glide__arrow--right flex-center" data-glide-dir="&gt;" aria-label="Diapositive suivante"></button>
             </div>
             <div class="glide__bullets business-news-bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet business-news-bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet business-news-bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet business-news-bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet business-news-bullet" data-glide-dir="=3"></button>
-                    <button class="glide__bullet business-news-bullet" data-glide-dir="=4"></button>
+                    <button class="glide__bullet business-news-bullet" data-glide-dir="=0" aria-label="Actualité n° 1"></button>
+                    <button class="glide__bullet business-news-bullet" data-glide-dir="=1" aria-label="Actualité n° 2"></button>
+                    <button class="glide__bullet business-news-bullet" data-glide-dir="=2" aria-label="Actualité n° 3"></button>
+                    <button class="glide__bullet business-news-bullet" data-glide-dir="=3" aria-label="Actualité n° 4"></button>
+                    <button class="glide__bullet business-news-bullet" data-glide-dir="=4" aria-label="Actualité n° 5"></button>
             </div>
           </div>
         </div>
@@ -291,565 +291,565 @@
                     <input class="activities-radio" type="radio" name="activities" id="les-plus-consultés">
                     <label class="activities-label flex-space-between" for="les-plus-consultés">Les plus consultés</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="agriculture-elevage-autres" checked>
                     <label class="activities-label flex-space-between" for="agriculture-elevage-autres">Agriculture, Elevage, autres</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="alimentation-&amp;-boissons">
                     <label class="activities-label flex-space-between" for="alimentation-&amp;-boissons">Alimentation &amp; Boissons</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="ambassades">
                     <label class="activities-label flex-space-between" for="ambassades">Ambassades</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="associations-organisations">
                     <label class="activities-label flex-space-between" for="associations-organisations">Associations, Organisations</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="banque-finance-&amp;-assurance">
                     <label class="activities-label flex-space-between" for="banque-finance-&amp;-assurance">Banque, finance &amp; assurance</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="commerce-de-gros">
                     <label class="activities-label flex-space-between" for="commerce-de-gros">Commerce de gros</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="commerces-&amp;-magasins">
                     <label class="activities-label flex-space-between" for="commerces-&amp;-magasins">Commerces &amp; Magasins</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
                     </ul>
                     <input class="activities-radio" type="radio" name="activities" id="commerce-de-bateaux-&amp;-moteurs">
                     <label class="activities-label flex-space-between" for="commerce-de-bateaux-&amp;-moteurs">Commerce de bateaux &amp; moteurs</label>
                     <ul class="activities-list flex-space-between">
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Animaux d'élevage">
-                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/animaux-d'élevage.png" alt="Image d'activité: Animaux d'élevage">
+                        <p class="activity-text">Animaux d'élevage</p><a class="activity-link" href="#" title="Animaux d'élevage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Apiculture &amp; sériculture">
-                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/apiculture-&amp;-sériculture.png" alt="Image d'activité: Apiculture &amp; sériculture">
+                        <p class="activity-text">Apiculture &amp; sériculture</p><a class="activity-link" href="#" title="Apiculture &amp; sériculture"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Coopératives &amp; exploitants">
-                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/coopératives-&amp;-exploitants.png" alt="Image d'activité: Coopératives &amp; exploitants">
+                        <p class="activity-text">Coopératives &amp; exploitants</p><a class="activity-link" href="#" title="Coopératives &amp; exploitants"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Céréales &amp; grains">
-                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/céréales-&amp;-grains.png" alt="Image d'activité: Céréales &amp; grains">
+                        <p class="activity-text">Céréales &amp; grains</p><a class="activity-link" href="#" title="Céréales &amp; grains"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Engrais &amp; Phytosanitaires">
-                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/engrais-&amp;-phytosanitaires.png" alt="Image d'activité: Engrais &amp; Phytosanitaires">
+                        <p class="activity-text">Engrais &amp; Phytosanitaires</p><a class="activity-link" href="#" title="Engrais &amp; Phytosanitaires"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Fruits &amp; légumes">
-                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/fruits-&amp;-légumes.png" alt="Image d'activité: Fruits &amp; légumes">
+                        <p class="activity-text">Fruits &amp; légumes</p><a class="activity-link" href="#" title="Fruits &amp; légumes"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Import - Export">
-                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/import---export.png" alt="Image d'activité: Import - Export">
+                        <p class="activity-text">Import - Export</p><a class="activity-link" href="#" title="Import - Export"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Soins des animaux">
-                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/soins-des-animaux.png" alt="Image d'activité: Soins des animaux">
+                        <p class="activity-text">Soins des animaux</p><a class="activity-link" href="#" title="Soins des animaux"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Tracteurs et matériels agricoles">
-                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/tracteurs-et-matériels-agricoles.png" alt="Image d'activité: Tracteurs et matériels agricoles">
+                        <p class="activity-text">Tracteurs et matériels agricoles</p><a class="activity-link" href="#" title="Tracteurs et matériels agricoles"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Usinage">
-                        <p class="activity-text">Usinage</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/usinage.png" alt="Image d'activité: Usinage">
+                        <p class="activity-text">Usinage</p><a class="activity-link" href="#" title="Usinage"></a>
                       </li>
-                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Œufs">
-                        <p class="activity-text">Œufs</p><a class="activity-link" href="#"></a>
+                      <li class="activities-list-item flex-center"><img class="activity-img" src="./images/œufs.png" alt="Image d'activité: Œufs">
+                        <p class="activity-text">Œufs</p><a class="activity-link" href="#" title="Œufs"></a>
                       </li>
                     </ul>
             </div>
@@ -881,7 +881,7 @@
                         <button class="main-card-comments main-card-detail">10</button><a class="main-card-shares main-card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="main-card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="main-card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article>
                   <article class="main-card vous-nous-card flex-align-center"> 
                     <div class="main-card-img-holder vous-nous-img-holder"><img class="main-card-img" src="./images/event-2.png" alt=""></div>
@@ -895,7 +895,7 @@
                         <button class="main-card-comments main-card-detail">10</button><a class="main-card-shares main-card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="main-card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="main-card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article><a class="show-all-btn vous-nous-link flex-center" href="#">Voir tous les événements</a>
           </div>
           <input class="vous-nous-input" type="radio" name="vous-nous" id="announces">
@@ -913,7 +913,7 @@
                         <button class="main-card-comments main-card-detail">10</button><a class="main-card-shares main-card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="main-card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="main-card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article>
                   <article class="main-card flex-align-center"> 
                     <div class="main-card-img-holder vous-nous-img-holder"><img class="main-card-img" src="./images/annonce-2.png" alt=""></div>
@@ -927,7 +927,7 @@
                         <button class="main-card-comments main-card-detail">10</button><a class="main-card-shares main-card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="main-card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="main-card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article><a class="show-all-btn vous-nous-link flex-center" href="#">Voir tous les annonces</a>
           </div>
           <input class="vous-nous-input" type="radio" name="vous-nous" id="jobs">
@@ -945,7 +945,7 @@
                         <button class="main-card-comments main-card-detail">10</button><a class="main-card-shares main-card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="main-card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="main-card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article>
                   <article class="main-card flex-align-center"> 
                     <div class="main-card-img-holder vous-nous-img-holder"><img class="main-card-img" src="./images/event-2.png" alt=""></div>
@@ -959,7 +959,7 @@
                         <button class="main-card-comments main-card-detail">10</button><a class="main-card-shares main-card-detail" href="#">8</a>
                       </div>
                     </div>
-                    <button class="main-card-btn show-more-btn" data-content="Afficher plus"> </button>
+                    <button class="main-card-btn show-more-btn" data-content="Afficher plus" aria-label="Afficher plus"> </button>
                   </article><a class="show-all-btn vous-nous-link flex-center" href="#">Voir tous les demandeurs d'emploi</a>
           </div>
         </div>
@@ -969,7 +969,7 @@
     <footer> 
       <section class="primary-footer"> 
         <nav class="primary-footer-nav container">
-          <div class="primary-footer-brief"><a class="primary-footer-logo-link" href="#">    <img class="footer-logo" src="./images/footer-logo.png" alt=""></a>
+          <div class="primary-footer-brief"><a class="primary-footer-logo-link" href="#" title="Home">    <img class="footer-logo" src="./images/footer-logo.png" alt="logo"></a>
             <p class="primary-footer-brief-text">Avec BIZCONGO, trouvez beaucoup plus que des coordonnées ! Professionnels, Promotions, Achats en Ligne, Emploi, Appels d’Offres, Petites Annonces, Actualités, Evènements, Horaires …</p>
           </div>
           <div class="primary-footer-nav-links contact">
@@ -1059,16 +1059,16 @@
                 <h4 class="sub-footer-heading">S'abonner à la Newsletter</h4>
                 <form class="newsletter-form flex-align-center">
                   <input class="newsletter-input" type="email" name="email" placeholder="Votre email">
-                  <button class="newsletter-btn" type="submit"> </button>
+                  <button class="newsletter-btn" type="submit" aria-label="Soumettre le formulaire"> </button>
                 </form>
               </div>
             </div>
             <ul class="footer-social-list flex-center">
-              <li class="footer-social-list-item"> <a class="footer-social-link instagram flex-center" href="#"></a></li>
-              <li class="footer-social-list-item"> <a class="footer-social-link facebook flex-center" href="#"></a></li>
-              <li class="footer-social-list-item"> <a class="footer-social-link linkedin flex-center" href="#"></a></li>
-              <li class="footer-social-list-item"> <a class="footer-social-link twitter flex-center" href="#"></a></li>
-              <li class="footer-social-list-item"> <a class="footer-social-link youtube flex-center" href="#"></a></li>
+              <li class="footer-social-list-item"> <a class="footer-social-link instagram flex-center" href="#" title="Instagram"></a></li>
+              <li class="footer-social-list-item"> <a class="footer-social-link facebook flex-center" href="#" title="Facebook"></a></li>
+              <li class="footer-social-list-item"> <a class="footer-social-link linkedin flex-center" href="#" title="Linkedin"></a></li>
+              <li class="footer-social-list-item"> <a class="footer-social-link twitter flex-center" href="#" title="Twitter"></a></li>
+              <li class="footer-social-list-item"> <a class="footer-social-link youtube flex-center" href="#" title="Youtube"></a></li>
             </ul>
           </div>
         </section>

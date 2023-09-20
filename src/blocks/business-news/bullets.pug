@@ -1,3 +1,4 @@
 mixin businessNewsBullet
     each card, index in businessNewsCards
-        button.glide__bullet.business-news-bullet(data-glide-dir="=" + index)
+        - const cardNumber= index +1
+        button.glide__bullet.business-news-bullet(data-glide-dir="=" + index aria-label="Actualité n° " + cardNumber)

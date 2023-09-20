@@ -12,13 +12,13 @@ section.hero(id="hero")
                 li.glide__slide.hero-slide-item
                     img.hero-img(src="./images/hero-2.png" alt="")
         .glide__arrows.hero-glide-arrows(data-glide-el="controls")
-            button.glide__arrow.glide__arrow--left.flex-center(data-glide-dir="<")
-            button.glide__arrow.glide__arrow--right.flex-center(data-glide-dir=">")
+            button.glide__arrow.glide__arrow--left.flex-center(data-glide-dir="<" aria-label="Diapositive précédente")
+            button.glide__arrow.glide__arrow--right.flex-center(data-glide-dir=">" aria-label="Diapositive suivante")
     .social-links 
-        a.social-link.facebook-link(href="#")
-        a.social-link.twitter-link(href="#")
-        a.social-link.linkedin-link(href="#")
-    a.hero-btn.flex-center(href="#hero")
+        a.social-link.facebook-link(href="#" title="Facebook")
+        a.social-link.twitter-link(href="#" title="Twitter")
+        a.social-link.linkedin-link(href="#" title="Linkedin")
+    a.hero-btn.flex-center(href="#hero" title="back to top")
     .search-wrapper.container
         form.search-form.flex-space-between 
             input.search-input.keywords-input(type="text" placeholder="Mots cles")
@@ -30,5 +30,5 @@ section.hero(id="hero")
                     option.select-option(value="") Test
                     option.select-option(value="") Test
                     option.select-option(value="") Test
-            button.location-btn(type="button")
+            button.location-btn(type="button" aria-label="Activer la localisation")
             button.submit-btn(type="submit") Chercher

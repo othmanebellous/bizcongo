@@ -14,7 +14,7 @@ mixin content(type)
                             time.main-card-date.main-card-detail(datetime="2022-10-05") #{event.date}
                             button.main-card-comments.main-card-detail #{event.commentsNumber}
                             a.main-card-shares.main-card-detail(href= event.link) #{event.sharesNumber}
-                    button.main-card-btn.show-more-btn(data-content="Afficher plus") 
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus" aria-label="Afficher plus") 
     else if type === "announce"
         each announce, index in announces 
             if index < 2
@@ -29,7 +29,7 @@ mixin content(type)
                             time.main-card-date.main-card-detail(datetime="2022-10-05") #{announce.date}
                             button.main-card-comments.main-card-detail #{announce.commentsNumber}
                             a.main-card-shares.main-card-detail(href= announce.link) #{announce.sharesNumber}
-                    button.main-card-btn.show-more-btn(data-content="Afficher plus") 
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus" aria-label="Afficher plus") 
     else
         each job, index in jobs 
             if index < 2
@@ -44,4 +44,4 @@ mixin content(type)
                             time.main-card-date.main-card-detail(datetime="2022-10-05") #{job.date}
                             button.main-card-comments.main-card-detail #{job.commentsNumber}
                             a.main-card-shares.main-card-detail(href= job.link) #{job.sharesNumber}
-                    button.main-card-btn.show-more-btn(data-content="Afficher plus") 
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus" aria-label="Afficher plus") 
