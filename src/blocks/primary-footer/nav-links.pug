@@ -6,4 +6,4 @@ mixin footerNavLinks
             ul.primary-footer-nav-list
                 each navLink in navLinksCategory.links
                     li.primary-footer-nav-list-item
-                        a.primary-footer-nav-list-link(href=navLink.href) #{navLink.title}
+                        a.primary-footer-nav-list-link(href=navLink.href title=navLink.title) #{navLink.title}

@@ -14,7 +14,7 @@ mixin spotlightcard
                             time.main-card-date.main-card-detail(datetime="2022-10-05") #{card.date}
                             button.main-card-comments.main-card-detail #{card.commentsNumber}
                             a.main-card-shares.main-card-detail(href= card.link) #{card.sharesNumber}
-                    button.main-card-btn.show-more-btn(data-content="Afficher plus")  
+                    button.main-card-btn.show-more-btn(data-content="Afficher plus" aria-label="Afficher plus")  
     .normal-cards-wrapper.flex-space-between
         each card, index in spotlightCards
             if index > 1

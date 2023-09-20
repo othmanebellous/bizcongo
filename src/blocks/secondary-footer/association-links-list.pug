@@ -4,4 +4,4 @@ mixin associationLinksList
         ul.association-list
             each asscociationListLink in asscociationList.asscociationListLinks
                 li.associations-list-item
-                    a.associations-link(href=asscociationListLink.href) #{asscociationListLink.title}
+                    a.associations-link(href=asscociationListLink.href title=asscociationListLink.title) #{asscociationListLink.title}
